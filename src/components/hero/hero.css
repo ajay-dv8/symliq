@@ -1,0 +1,37 @@
+body {
+  --light: #e6f03a;
+  --light: #eee;
+  --dark: #161616;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--light);
+}
+
+span {
+  position: absolute;
+  display: block; 
+  z-index: 2;
+  width: 50%; 
+  color: var(--light);
+  top: calc(50vh - 56px); 
+
+  &.right {
+    right: 0; 
+  }
+
+  &.left {
+    left: 0; 
+  }
+}
+
+.box {
+  height: 1.2vh;
+  width: 50vw;
+  margin-bottom: -0.2vh;
+  background: var(--dark);
+  display: block;
+}
