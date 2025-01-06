@@ -12,10 +12,11 @@ import { ContactIntro } from "@/components/contact-intro";
 import { Footer } from '@/components/footer'; 
 import { WorksCompleted } from '@/components/works-completed';
 import { Testimonials } from '@/components/testimonials';
+import { Unveil } from '@/components/unvail/unvail';
 
 export default function Home() {
   return (
-    <div className=" ">
+    <div className=" p-0 m-0">
       <ReactLenis root>
         <Hero/>
         <WhatWeDo/>
@@ -26,11 +27,14 @@ export default function Home() {
         <Process/>
         <ContactCTA/> 
         <ContactIntro/> 
-        <div className='bg-colorDark w-full mx-0 px-0'> 
+        {/* <div className='bg-colorDark w-full mx-0 px-0'>  */}
           <WorksCompleted/>
-          <Testimonials/>
-          <Footer/>
-        </div>
+          {/* <Unveil/> */}
+          {/* <div className='bg-colorDark'>  */}
+            <Testimonials/>
+            <Footer/>
+          {/* </div> */}
+        {/* </div> */}
       </ReactLenis>
     </div>
   );

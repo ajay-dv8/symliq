@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@number-flow/react": "^0.5.1",
     "@tabler/icons-react": "^3.26.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

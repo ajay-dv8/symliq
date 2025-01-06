@@ -10,7 +10,7 @@ export function Testimonials() {
   ));
 
   return (
-    (<div className="w-full h-full py-20 bg-colorDark">
+     <div className="w-full h-full py-20 bg-colorDark">
       <Titles
         smallTitle={"Testimonials"}
         bigTitle="What our customers say"
@@ -21,7 +21,7 @@ export function Testimonials() {
         subClassName={"text-colorLight"} 
       />
       <Carousel items={cards} />
-    </div>)
+    </div> 
   );
 }
  
