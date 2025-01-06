@@ -52,17 +52,17 @@ export const Footer = () => {
           <div className="flex justify-center space-x-6 md:flex-col md:space-x-0 md:space-y-6">
             <Link href="#" className="hover:text-white transition-colors">
               <TiSocialInstagram className="h-6 w-6" />
-              <span className="sr-only">Instagram</span>
+              {/* <span className="sr-only">Instagram</span> */}
             </Link>
             <Link href="#" className="hover:text-white transition-colors">
               <svg viewBox="0 0 24 24" className="h-6 w-6" fill="currentColor">
                 <path d="M22 7h-7V2H9v5H2l10 8.5L22 7zM2 17v2h20v-2H2z" />
               </svg>
-              <span className="sr-only">Behance</span>
+              {/* <span className="sr-only">Behance</span> */}
             </Link>
             <Link href="#" className="hover:text-white transition-colors">
               <TiSocialLinkedin className="h-6 w-6" />
-              <span className="sr-only">LinkedIn</span>
+              {/* <span className="sr-only">LinkedIn</span> */}
             </Link>
           </div>
         </div>
