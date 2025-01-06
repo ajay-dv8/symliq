@@ -9,9 +9,9 @@ export const WhatWeDo = () => {
   const textContainerRef = useRef(null);
   const subTextContainerRef = useRef(null);
 
-  const imagesIsInView = useInView(imagesContainerRef, { once: false, threshold: 0.4 });
-  const textIsInView = useInView(textContainerRef, { once: false, threshold: 0.5 });
-  const subTextIsInView = useInView(subTextContainerRef, { once: false, threshold: 0.6 });
+  const imagesIsInView = useInView(imagesContainerRef, { once: false, threshold: 0.3 });
+  const textIsInView = useInView(textContainerRef, { once: false, threshold: 0.4 });
+  const subTextIsInView = useInView(subTextContainerRef, { once: false, threshold: 0.5 });
 
   const handleMouseEnter = (index) => {
     videoRefs.current[index]?.play();
@@ -23,9 +23,9 @@ export const WhatWeDo = () => {
   };
 
   const videos = [
-    { id: '1', src: "/vidf.webm", size: "w-52" },
-    { id: '2', src: "/vidf.webm", size: "w-64 ", autoplay: true }, // Middle video
-    { id: '3', src: "/vidf.webm", size: "w-52" },
+    { id: '1', src: "/vid/vidf.webm", size: "w-52" },
+    { id: '2', src: "/vid/vidf.webm", size: "w-64 ", autoplay: true }, // Middle video
+    { id: '3', src: "/vid/vidf.webm", size: "w-52" },
   ];
 
   const containerVariants = {
@@ -53,10 +53,10 @@ export const WhatWeDo = () => {
   };
  
   return (
-    <div className="w-full bg-colorLight text-colorDark p-10 mt-40" >
+    <div className="w-full bg-colorLight text-colorDark p-10 ~mt-10/40" >
       <motion.div
         ref={imagesContainerRef}
-        className="flex justify-center gap-20 items-end"
+        className="hidden md:flex justify-center ~gap-16/20 items-end"
         initial="hidden"
         animate={imagesIsInView ? "show" : "hidden"}
         variants={containerVariants}
@@ -67,7 +67,7 @@ export const WhatWeDo = () => {
             className={`overflow-hidden ${video.size}`}
             drag
             dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}
-            whileHover={{ scale: 1.1 }} // Scale animation on hover
+            whileHover={{ scale: 1.5 }} // Scale animation on hover
             variants={itemVariants}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
@@ -84,36 +84,36 @@ export const WhatWeDo = () => {
         ))}
       </motion.div>
 
-      <p className="font-bold text-colorDark/50 text-center text-xl mt-20 mb-16">
+      <p className="font-bold text-colorDark/50 text-center text-xl ~mt-1/20 mb-16">
         What We Do
       </p>
  
 
       {/* big title */}
       <motion.div
-        className="flex justify-center gap-20"
+        className="flex justify-center flex-col md:flex-row ~gap-8/20"
         ref={textContainerRef}
         initial="hidden"
         animate={textIsInView ? "show" : "hidden"}
         variants={containerVariants}
       >
         <motion.h2
-          className="text-center text-colorDark text-7xl font-semibold"
+          className="text-center text-colorDark ~text-5xl/7xl font-semibold"
           variants={itemVariants}
         >
-          Design &nbsp; . 
+          Design &nbsp; <p className="hidden md:visible">.</p>  
         </motion.h2>
         <motion.h2
-          className="text-center text-colorDark text-7xl font-semibold"
+          className="text-center text-colorDark ~text-5xl/7xl font-semibold"
           variants={itemVariants}
         >
-          Develop &nbsp; .  
+          Develop &nbsp; <p className="hidden md:visible">.</p>   
         </motion.h2>
         <motion.h2
-          className="text-center text-colorDark text-7xl font-semibold"
+          className="text-center text-colorDark ~text-5xl/7xl font-semibold"
           variants={itemVariants}
         >
-          Deploy
+          Deploy &nbsp;
         </motion.h2>
  
       </motion.div>
@@ -127,13 +127,19 @@ export const WhatWeDo = () => {
       >
         <motion.p 
           variants={itemVariants} 
-          className="text-center text-xl font-semibold"
+          className="text-center text-base block md:hidden"
+        >
+          We craft cutting-edge digital products that blend stunning design, seamless development, and the power of the latest technology!
+        </motion.p>
+        <motion.p 
+          variants={itemVariants} 
+          className="text-center text-xl font-semibold hidden md:block"
         >
           We craft cutting-edge digital products that blend stunning design,
         </motion.p>
         <motion.p 
           variants={itemVariants}
-          className="text-center text-xl font-semibold"
+          className="text-center text-xl font-semibold hidden md:block"
         >
           seamless development, and the power of the latest technology!
         </motion.p>

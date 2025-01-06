@@ -60,7 +60,7 @@ export const Hero = () => {
           that Drive Success
         </h2>
 
-        {/* turn p to a link  */}
+        {/* TODO: turn p to a link  */}
         <p className="inline-block mt-20 nav-hover-btn ">
           Explore 
         </p>

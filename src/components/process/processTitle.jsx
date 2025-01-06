@@ -47,7 +47,7 @@ export const ProcessTitle = () => {
       >
         <motion.h1 
           variants={itemVariants}
-          className="text-center text-colorDark text-7xl font-semibold">
+          className="text-center text-colorDark ~text-3xl/7xl font-semibold">
         Trust The Process
         </motion.h1>
 

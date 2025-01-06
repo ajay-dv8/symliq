@@ -2,41 +2,7 @@
 import { SwapBtn } from "./swapBtn";
 import { Titles } from "./titles";
 import Card from "./ui/projectCard";
- 
-
-const projects  = [
-  { 
-    id: 1, 
-    name: 'Project 1', 
-    type: 'Web Development', 
-    backgroundImage: '', 
-    description: 'This is project 1' 
-  }, 
-  { 
-    id: 2, 
-    name: 'Project 2',
-    backgroundImage: '',
-    type: 'Web Development',  
-    description: 'This is project 2' 
-  },
-  { 
-    id: 3, 
-    backgroundImage: '',
-    name: 'Project 3', 
-    type: 'Web Development',  
-    description: 'This is project 3' 
-  },
-  { 
-    id: 4, 
-    backgroundImage: '',
-    name: 'Project 4', 
-    type: 'Web Development',  
-    description: 'This is project 4' 
-  }
-];
-
-
-
+ import { projects } from '../constants/projects'
 
 export const Projects = () => {
  
@@ -70,13 +36,15 @@ export const Projects = () => {
         ))}
       </div> 
 
-      <div className="justify-center flex mt-8">
+      {/* Fix product button */}
+
+      {/* <div className="justify-center flex mt-48">
         <SwapBtn
-        className="text-colorDark w-28 bg-colorLight border border-colorDark hover:bg-colorLight"
+        className="text-colorDark bg-colorLight  hover:bg-colorLight"
         link={"#"}
         children={"More"}
         />
-      </div>
+      </div> */}
     </div>
   )
 }

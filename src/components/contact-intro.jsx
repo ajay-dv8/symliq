@@ -5,6 +5,9 @@ import { Contact } from "./contact-us/contact";
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView } from "framer-motion";  
 import Image from "next/image";
+import { MouseHighlight } from "./ui/mouse-highlight";
+import TrippyScroll from "./ui/trippy-scroll";
+import { WorksCompleted } from "./works-completed";
 
 gsap.registerPlugin(ScrollTrigger )
 
@@ -30,24 +33,24 @@ export const ContactIntro = () => {
     // })
   }, [])
  
-  return (
+  return ( 
     <div className=" w-screen min-h-screen ">
       <div id="clip" className="h-dvh w-screen ">
         <div className="mask-clip-path about-image bg-colorDark">
-          <Image
+         
+          {/* <Image
             src="/darkbg.webp"
             alt="bg"
             height={500}
             width={500}
             className="absolute left-0 top-0 size-full object-cover"
-          />  
-            
+          />  */}
             <ContactTitle/>
-            <Contact/>
-         
+            <Contact/> 
+            {/* <WorksCompleted/> */}
         </div>
       </div>
-    // </div>
+    </div> 
   )
 }
 
@@ -85,7 +88,7 @@ const itemVariants = {
   },
 };
 
-  return (
+  return ( 
   <div className='mt-16 pt-10'>
   <h4 className="text-lg text-center font-semibold text-colorLight/50 my-10">
     Contact Us
@@ -100,7 +103,7 @@ const itemVariants = {
   >
     <motion.h1 
       variants={itemVariants}
-      className="text-center text-colorLight text-7xl font-semibold">
+      className="text-center text-colorLight ~text-3xl/7xl font-semibold">
       Let's Work Together
     </motion.h1>
 
@@ -115,14 +118,18 @@ const itemVariants = {
       variants={itemVariants}
       className='text-colorLight text-lg font-semibold'>
       on building something cool!
-    </motion.p>
-    {/* <motion.p 
-      variants={itemVariants}
-      className='text-colorLight text-lg font-semibold'>
-      great product
-    </motion.p> */}
+    </motion.p> 
   </motion.div>
   </motion.div>
-</div>
+</div> 
+  )
+}
+ 
+
+export const Socials = () => {
+  return (
+    <div>
+      
+    </div>
   )
 }

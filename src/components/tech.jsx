@@ -38,7 +38,7 @@ export function TechStack() {
   return (
     <>
     <motion.div
-      className="container"
+      className="w-full px-8"
       ref={textContainerRef} 
       initial="hidden"
       animate={textIsInView ? "show" : "hidden"}
@@ -46,7 +46,7 @@ export function TechStack() {
     >
       <motion.p 
         variants={itemVariants}
-        className="text-colorDark text-center text-lg font-semibold my-20"
+        className="text-colorDark/70 w-full text-center text-pretty text-lg font-semibold my-20"
       >
         Empowering Clients with the Perfect Tech Stack for Outstanding Results
       </motion.p> 

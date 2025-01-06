@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from 'react'
+import { ServicesMarquee } from "../service-marquee";
 
 export const HeroParallax = ({
   products
@@ -27,7 +28,8 @@ export const HeroParallax = ({
   return (
     (<div
       ref={ref}
-      className="h-[300vh] bg-foreground py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      // TODO: h-[300dvh]
+      className="~h-[100rem]/[160rem] bg-foreground ~pt-28/40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -52,7 +54,7 @@ export const HeroParallax = ({
             <ProductCard product={product} translate={translateX} key={product.title} />
           ))}
         </motion.div>
-      </motion.div>
+      </motion.div> 
     </div>)
   );
 };
@@ -60,9 +62,9 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     (<div
-      className="max-w-7xl relative mx-auto py-20 md:py-40 px-10 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-semibold text-colorDark  ">
-        The Ultimate <br /> development studio
+      className="max-w-7xl relative mx-auto ~py-10/40 px-10 w-full  left-0 top-0">
+      <h1 className=" text-3xl md:text-7xl font-semibold text-colorDark ">
+        The Ultimate <br /> development agency
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-colorDark/70 ">
         We build beautiful products with the latest technologies and frameworks.
@@ -86,7 +88,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0">
+      className="group/product ~h-48/96 ~w-[16rem]/[30rem] relative flex-shrink-0">
       <Link href={product.link} className="block group-hover/product:shadow-2xl ">
         <Image
           src={product.thumbnail}

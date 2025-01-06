@@ -2,6 +2,7 @@
  import { Titles } from "../titles";
  import React, { useRef } from 'react'
 import { delay, motion, useInView } from "framer-motion";  
+import { TiMail } from "react-icons/ti";
 
 export const Contact = () => {
 
@@ -34,23 +35,22 @@ const itemVariants = {
 };
  
   return (
-    <div className=" " > 
-
-    
+    <div className=" " >  
       <motion.div 
         ref={textContainerRef}
         initial="hidden"
         animate={textIsInView ? "show" : "hidden"}
         variants={containerVariants}
         className="mt-16"
-      >
+      > 
         <motion.h1 
           variants={itemVariants}
-          className="text-9xl text-colorLight font-semibold text-center drop-shadow-xl"
+          className=" text-4xl md:text-9xl mt-8 text-colorLight font-semibold text-center drop-shadow-xl"
         >
-          info@symlq.com
+          info@symliq.com
         </motion.h1>
       </motion.div>
+ 
     </div>
   );
 };

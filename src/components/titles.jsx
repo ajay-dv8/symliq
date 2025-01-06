@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { motion, useInView } from "framer-motion";  
 import { cn } from '@/lib/utils';
 
-export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className }) => {
+export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className, subClassName, smallClassName }) => {
   const textContainerRef = useRef(null);
   const subTextContainerRef = useRef(null);
 
@@ -33,9 +33,10 @@ export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className
       } 
     },
   };
+  
   return (
-    <div className='mt-28 pt-10'>
-      <h4 className={cn("text-lg text-center font-semibold text-colorDark/50 my-10", className)}>
+    <div className='mt-28 pt-10 '>
+      <h4 className={cn("text-lg text-center font-semibold text-colorDark/50 my-10", smallClassName)}>
         {smallTitle}
       </h4>
 
@@ -48,7 +49,7 @@ export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className
       >
         <motion.h1 
           variants={itemVariants}
-          className="text-center text-colorDark text-7xl font-semibold">
+          className={cn("text-center text-colorDark ~text-3xl/7xl font-semibold", className)}>
         {bigTitle}
         </motion.h1>
 
@@ -57,16 +58,16 @@ export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className
         initial="hidden"
         animate={subTextIsInView ? "show" : "hidden"}
         variants={containerVariants}
-        className="text-center mt-10" 
+        className="text-center ~mt-3/10" 
       >
         <motion.p 
           variants={itemVariants}
-          className='text-colorDark text-lg font-semibold'>
+          className={('text-colorDark/60 ~text-base/lg font-normal md:font-semibold', subClassName)}>
           {subLineOne}
         </motion.p>
         <motion.p 
           variants={itemVariants}
-          className='text-colorDark text-lg font-semibold'>
+          className={('text-colorDark/60 ~text-base/lg font-normal md:font-semibold', subClassName)}>
           {subLineTwo}
         </motion.p>
       </motion.div>

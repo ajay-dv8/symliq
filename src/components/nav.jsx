@@ -53,7 +53,7 @@ export const Navbar = () => {
         <nav className="flex size-full items-center justify-between p-4">
           {/* Logo */}
           <div className="flex items-center gap-7">
-            <Image width={150} height={70} src="/fullLogo.png" alt="logo" className=" " /> 
+            <Image width={150} height={70} src="/fullLogo.png" alt="logo" className=" w-24 md:w-40" /> 
           </div> 
 
           {/* nav links */}

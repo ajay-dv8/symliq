@@ -36,9 +36,9 @@ export function ServicesMarquee() {
   };
 
   return (
-    <>
+    <div className="relative ~my-12/24">
     <motion.div
-      className="container"
+      className=""
       ref={textContainerRef} 
       initial="hidden"
       animate={textIsInView ? "show" : "hidden"}
@@ -46,7 +46,7 @@ export function ServicesMarquee() {
     >
       <motion.p 
         variants={itemVariants}
-        className="text-colorDark/50 text-center text-lg font-semibold my-10"
+        className="text-colorDark/50 text-center text-lg font-semibold ~my-1/10"
       >
         Our Services
       </motion.p> 
@@ -57,7 +57,7 @@ export function ServicesMarquee() {
         <InfiniteMovingCards type="text" items={stack} direction="left" speed="fast" />
       </div> 
  
-    </>
+    </div>
   );
 }
 
