@@ -45,6 +45,8 @@ export default {
         foreground: "var(--foreground)",
         colorLight: "#eee",
         colorDark: "#161616",
+        customBlue: "#1c69f9",
+        customOrange: "#fe9000"
       },
     },
   },

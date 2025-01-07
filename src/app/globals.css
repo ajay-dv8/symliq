@@ -7,7 +7,10 @@
   --foreground: #161616;
 }
 
-*{scrollbar-gutter: stable;}
+* {
+  scrollbar-gutter: stable;
+  /* cursor: none; */
+}
 
 /* width */
 ::-webkit-scrollbar {

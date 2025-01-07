@@ -8,8 +8,10 @@ const quickLinks = ["About", "Services", "Products", "Case study", "Contact" ];
 
 export const Footer = () => {
   return (
-    <footer className='~p-8/24 w-full bg-colorDark'>
-      <MouseHighlight containerClassName={"rounded-2xl p-10 w-full text-colorLight/70"}>
+    <footer 
+      className='~p-3/24 w-full bg-colorDark ' 
+    >
+      <MouseHighlight containerClassName={"rounded-2xl ~p-8/24 w-full text-colorLight/70"}>
      
         <div className="flex flex-col md:gap-x-20 md:flex-row md:items-start items-center text-center md:justify-between space-y-8 md:space-y-0">
           {/* Logo and Tagline */}

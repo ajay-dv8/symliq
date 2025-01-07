@@ -17,13 +17,13 @@ export const Projects = () => {
         />
      </div> 
       
-      <div className="">
+      <div className="relative">
         {projects.map((project) => (
-          <div 
-            key={project.id}  
-            className="sticky top-40" 
+          // <div 
+            // key={project.id}  
+            // className="sticky top-40 md:top-28" 
 
-          >
+          // >
             <Card 
             key={project.id}  
             type={project.type} 
@@ -32,7 +32,7 @@ export const Projects = () => {
             description={project.description}
             backgroundImage={project.backgroundImage}
           />
-          </div>
+          // </div>
         ))}
       </div> 
 
@@ -49,4 +49,5 @@ export const Projects = () => {
   )
 }
 
+ 
  

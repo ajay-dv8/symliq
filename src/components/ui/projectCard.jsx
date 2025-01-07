@@ -1,23 +1,42 @@
+"use client"
 import React, { useRef } from "react";
 import {
   motion,
   useMotionTemplate,
   useMotionValue,
   useSpring,
+  useScroll,
+  useTransform,
 } from "framer-motion"; 
 import { TiLocationArrow } from "react-icons/ti";
+import { projects } from "@/constants/projects";
 
-const Card = ({ backgroundImage, name,  description, type }) => {
+const Card = ({ backgroundImage, name,  description, type, totalCards, index }) => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"], 
+  });
+ 
+  // Scale down and blur the card as the next card scrolls into view
+  const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+ 
 
   return (
-    <div className="grid w-full place-content-center px-4 py-12 text-slate-900">
+    <motion.div 
+      style={{
+        zIndex: totalCards - index, // Ensure stacking order
+        scale,
+      }}
+      className="grid w-full place-content-center px-4 py-12 sticky top-28 "
+    >
       <TiltCard 
         backgroundImage={backgroundImage} 
         type={type} 
         name={name}
         description={description}
       />
-    </div>
+    </motion.div>
   );
 };
 
@@ -67,7 +86,7 @@ const TiltCard = ({ backgroundImage, name, description, type  }) => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative rounded-xl ~h-[14rem]/[36rem] ~w-[20rem]/[56rem] bg-gradient-to-br from-indigo-300 to-violet-300 pb-0 "
+      className="relative rounded-xl w-[90vw] aspect-video bg-gradient-to-br from-indigo-300 to-violet-300 pb-0 "
     >
       <div
         style={{
@@ -77,7 +96,7 @@ const TiltCard = ({ backgroundImage, name, description, type  }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-4 grid place-content-center rounded-xl shadow-lg "
+        className="absolute inset-1 grid place-content-center rounded-xl shadow-xl "
       >
         <div className="relative z-10 flex flex-col justify-between h-full text-center">
           {/* Top Section */}

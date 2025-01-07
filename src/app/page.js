@@ -26,15 +26,18 @@ export default function Home() {
         <TechStack/> 
         <Process/>
         <ContactCTA/> 
-        <ContactIntro/> 
-        {/* <div className='bg-colorDark w-full mx-0 px-0'>  */}
-          <WorksCompleted/>
-          {/* <Unveil/> */}
-          {/* <div className='bg-colorDark'>  */}
-            <Testimonials/>
-            <Footer/>
-          {/* </div> */}
-        {/* </div> */}
+        <ContactIntro/>  
+        <WorksCompleted/> 
+          <Testimonials/>
+        <div className='relative h-[500px]'
+          style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
+        > 
+          <div className='relative h-[calc(100vh+500px)] -top-[100vh]'> 
+            <div className='h-[500px] sticky top-[calc(100vh-500px)]'> 
+              <Footer />
+            </div> 
+          </div> 
+        </div>
       </ReactLenis>
     </div>
   );
