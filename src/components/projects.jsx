@@ -1,11 +1,30 @@
 "use client"
-import { SwapBtn } from "./swapBtn";
+
+import * as React from "react" 
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+
+import { projects } from "@/constants/projects"
 import { Titles } from "./titles";
 import Card from "./ui/projectCard";
- import { projects } from '../constants/projects'
-
-export const Projects = () => {
+import Image from "next/image";
  
+
+export function Projects() {
+  const [selectedProject, setSelectedProject] = React.useState(null);
+
+  function handleCardClick(project) {
+    setSelectedProject(project);
+  }
+
   return (
     <div className='w-full px-10 pb-20 mb-20' >
       <div className="mb-10"> 
@@ -17,37 +36,170 @@ export const Projects = () => {
         />
      </div> 
       
-      <div className="relative">
+     <Drawer>
         {projects.map((project) => (
-          // <div 
-            // key={project.id}  
-            // className="sticky top-40 md:top-28" 
-
-          // >
-            <Card 
-            key={project.id}  
-            type={project.type} 
-
-            name={project.name}
-            description={project.description}
-            backgroundImage={project.backgroundImage}
-          />
-          // </div>
+          <div  className="sticky top-28" key={project.id}>
+            {/* Use the trigger to open the drawer */}
+            <DrawerTrigger asChild>
+              <div onClick={() => handleCardClick(project)}>
+                <Card
+                  key={project.id}
+                  name={project.name}
+                  backgroundImage={project.backgroundImage}
+                />
+              </div>
+            </DrawerTrigger>
+          </div>
         ))}
-      </div> 
 
-      {/* Fix product button */}
+        <DrawerContent>
+          {selectedProject && (
+            <div className=" w-full ">
+              <div className="flex w-full md:gap-x-24">
+                <div className="flex flex-col flex-[45%] max-w-[30rem]">
+                  <DrawerHeader >
+                    <DrawerTitle 
+                      className="mb-10 md:mx-8">{selectedProject.name}</DrawerTitle>
+                    <DrawerDescription 
+                      className="~text-lg/4xl md:mx-8 max-w-[18rem]"
+                    >
+                      {selectedProject.desc}
+                    </DrawerDescription>
+                  </DrawerHeader>
+                  <div className=" pb-0">
+                    <div className="flex flex-col ">
 
-      {/* <div className="justify-center flex mt-48">
-        <SwapBtn
-        className="text-colorDark bg-colorLight  hover:bg-colorLight"
-        link={"#"}
-        children={"More"}
-        />
-      </div> */}
+                      <div className="mt-8 md:mx-12">
+                        <p className="text-lg font-semibold mb-4">
+                          The Project:
+                        </p>
+                        <p className="text-colorLight/70">
+                          {selectedProject.description}
+                        </p>
+                      </div>
+
+                      <div className="text-left mt-10 md:mx-12">
+                        <p className="text-lg font-semibold">
+                          Technologies:
+                        </p>
+                        <ul className="flex flex-wrap gap-x-4 text-colorLight/70">
+                          {selectedProject.stack.map((tech, index) => (
+                            <li 
+                              key={index}
+                              className="inline-block border border-customOrange rounded-md px-3 mt-4 py-1" 
+                            >
+                              {tech}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col flex-[55%] justify-center items-center">
+                  <Image 
+                    src={selectedProject.backgroundImage} 
+                    alt="" 
+                    width={100} 
+                    height={70}
+                    className="aspect-video w-full md:p-10 object-cover"
+                  />        
+                  <div className="flex w-full"> 
+                    <Image 
+                      src={selectedProject.backgroundImage} 
+                      alt="" 
+                      width={80} 
+                      height={80}
+                      className="aspect-square w-full md:px-10 md:py-5 object-cover"
+                    />        
+                    <Image 
+                      src={selectedProject.backgroundImage} 
+                      alt="" 
+                      width={80} 
+                      height={80}
+                      className="aspect-square w-full md:px-10 md:py-5 object-cover"
+                    />        
+                  </div>        
+                </div>
+              </div>
+
+              <DrawerFooter>
+                
+              </DrawerFooter>
+              
+            </div>
+          )}
+        </DrawerContent>
+      </Drawer>
     </div>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// "use client" 
+// import { Titles } from "./titles";
+// import Card from "./ui/projectCard";
+//  import { projects } from '../constants/projects' 
+
+// export const Projects = () => {
+ 
+//   return (
+//     <div className='w-full px-10 pb-20 mb-20' >
+//       <div className="mb-10"> 
+//         <Titles 
+//           smallTitle='Our Projects'
+//           bigTitle="Featured Projects"
+//           subLineOne="Discover innovative solutions"
+//           subLineTwo="That our customers Love"
+//         />
+//      </div> 
+      
+//       <div className="relative">
+//         {projects.map((project) => (
+ 
+//             <Card 
+//             key={project.id}  
+//             // type={project.type} 
+
+//             name={project.name}
+//             // description={project.description}
+//             backgroundImage={project.backgroundImage}
+//           /> 
+//         ))}
+//       </div> 
+
+//       {/* Fix product button */}
+
+//       {/* <div className="justify-center flex mt-48">
+//         <SwapBtn
+//         className="text-colorDark bg-colorLight  hover:bg-colorLight"
+//         link={"#"}
+//         children={"More"}
+//         />
+//       </div> */}
+//     </div>
+//   )
+// }
 
  
  

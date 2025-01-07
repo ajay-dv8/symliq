@@ -8,8 +8,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion"; 
-import { TiLocationArrow } from "react-icons/ti";
-import { projects } from "@/constants/projects";
+import { TiLocationArrow } from "react-icons/ti"; 
 
 const Card = ({ backgroundImage, name,  description, type, totalCards, index }) => {
   const ref = useRef(null);

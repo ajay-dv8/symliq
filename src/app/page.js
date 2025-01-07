@@ -11,8 +11,8 @@ import { ServicesMarquee } from "@/components/service-marquee";
 import { ContactIntro } from "@/components/contact-intro";
 import { Footer } from '@/components/footer'; 
 import { WorksCompleted } from '@/components/works-completed';
-import { Testimonials } from '@/components/testimonials';
-import { Unveil } from '@/components/unvail/unvail';
+import { Testimonials } from '@/components/testimonials'; 
+import { DrawerDemo } from '@/components/drawer';
 
 export default function Home() {
   return (
@@ -25,6 +25,7 @@ export default function Home() {
         <Projects />  
         <TechStack/> 
         <Process/>
+        <DrawerDemo/>
         <ContactCTA/> 
         <ContactIntro/>  
         <WorksCompleted/> 
