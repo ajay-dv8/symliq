@@ -61,7 +61,7 @@ export const Navbar = () => {
               {navItems.map((item, index) => (
                 <a
                   key={index}
-                  href={`#${item.toLowerCase()}`}
+                  href={`/${item.toLowerCase()}`}
                   className="nav-hover-btn"
                 >
                   {item}

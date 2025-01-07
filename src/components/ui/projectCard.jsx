@@ -94,14 +94,15 @@ const TiltCard = ({ backgroundImage, name, description, type  }) => {
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat"
         }}
-        className="absolute inset-1 grid place-content-center rounded-xl shadow-xl "
+        className="absolute cursor-pointer inset-1 grid place-content-center rounded-xl shadow-xl "
       >
         <div className="relative z-10 flex flex-col justify-between h-full text-center">
           {/* Top Section */}
           <div className="flex justify-between ~px-0/5 relative ~-top-16/36">
             <h3 className="~text-base/-xl text-colorLight drop-shadow-lg">{type}</h3>
-            <TiLocationArrow className="~text-2xl/4xl text-colorLight" />
+            {/* <TiLocationArrow className="~text-2xl/4xl text-colorLight" /> */}
           </div>
 
           {/* Bottom Section */}

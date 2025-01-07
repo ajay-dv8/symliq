@@ -29,7 +29,7 @@ export function Projects() {
     <div className='w-full px-10 pb-20 mb-20' >
       <div className="mb-10"> 
         <Titles 
-          smallTitle='Our Projects'
+          smallTitle='Case Study'
           bigTitle="Featured Projects"
           subLineOne="Discover innovative solutions"
           subLineTwo="That our customers Love"
@@ -62,7 +62,7 @@ export function Projects() {
                     <DrawerTitle 
                       className="my-10 md:mx-8">{selectedProject.name}</DrawerTitle>
                     <DrawerDescription 
-                      className="~text-lg/4xl md:mx-8 max-w-[18rem]"
+                      className="~text-lg/4xl md:mx-8 max-w-[20rem]"
                     >
                       {selectedProject.desc}
                     </DrawerDescription>
