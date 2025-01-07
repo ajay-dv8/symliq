@@ -53,13 +53,14 @@ export function Projects() {
         ))}
 
         <DrawerContent>
+
           {selectedProject && (
             <div className=" w-full ">
               <div className="flex w-full md:gap-x-24">
                 <div className="flex flex-col flex-[45%] max-w-[30rem]">
                   <DrawerHeader >
                     <DrawerTitle 
-                      className="mb-10 md:mx-8">{selectedProject.name}</DrawerTitle>
+                      className="my-10 md:mx-8">{selectedProject.name}</DrawerTitle>
                     <DrawerDescription 
                       className="~text-lg/4xl md:mx-8 max-w-[18rem]"
                     >
@@ -98,28 +99,36 @@ export function Projects() {
                 </div>
 
                 <div className="flex flex-col flex-[55%] justify-center items-center">
-                  <Image 
-                    src={selectedProject.backgroundImage} 
-                    alt="" 
-                    width={100} 
-                    height={70}
-                    className="aspect-video w-full md:p-10 object-cover"
-                  />        
+                  <div className="md:p-10">
+                    <Image 
+                      src={selectedProject.backgroundImage} 
+                      alt="" 
+                      width={720} 
+                      height={480}
+                      className="aspect-video w-full object-cover rounded-2xl"
+                    />      
+                  </div>  
+
                   <div className="flex w-full"> 
-                    <Image 
-                      src={selectedProject.backgroundImage} 
-                      alt="" 
-                      width={80} 
-                      height={80}
-                      className="aspect-square w-full md:px-10 md:py-5 object-cover"
-                    />        
-                    <Image 
-                      src={selectedProject.backgroundImage} 
-                      alt="" 
-                      width={80} 
-                      height={80}
-                      className="aspect-square w-full md:px-10 md:py-5 object-cover"
-                    />        
+                    <div className="rounded-xl w-full  md:px-10 md:py-5 "> 
+                      <Image 
+                        src={selectedProject.backgroundImage} 
+                        alt="" 
+                        width={360} 
+                        height={360}
+                        className="aspect-square w-full object-cover rounded-2xl"
+                      />        
+                    </div>
+
+                    <div className="rounded-xl w-full  md:px-10 md:py-5 "> 
+                      <Image 
+                        src={selectedProject.backgroundImage} 
+                        alt="" 
+                        width={360} 
+                        height={360}
+                        className="aspect-square w-full object-cover rounded-2xl"
+                      />        
+                    </div>
                   </div>        
                 </div>
               </div>
