@@ -3,10 +3,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import "./hero.css";
 import { useEffect } from "react";
-import Image from "next/image";
-// import Logo from "../3d-logo/logo";
+import Image from "next/image"; 
 
 gsap.registerPlugin(ScrollTrigger);
+
 export const Hero = () => {
   useEffect(() => { 
     gsap
@@ -68,6 +68,9 @@ export const Hero = () => {
       {Array.from({ length: 100 }, (_, i) => (
         <div key={i} className="box"></div>
       ))}
-    </section>
+    </section> 
   );
 };
+
+
+ 

@@ -14,7 +14,7 @@ export const projects = [
   id: 2, 
   name: 'Zivot Consult', 
   type: 'Brand / Marketing', 
-  backgroundImage: '/works/zivot.jpg', 
+  backgroundImage: '/works/zivot.webp', 
   link: "",
   stack: ['Html', 'CSS', 'JavaScript', 'Laravel', 'PHP', 'MySql'],
   desc: "A consultancy specializing in career growth, study abroad, and migration services",
@@ -23,7 +23,7 @@ export const projects = [
 { 
   id: 3, 
   name: 'Aljani',
-  backgroundImage: '/works/alani.png',
+  backgroundImage: '/works/alanis.webp',
   type: 'eCommerce',  
   link: "",
   stack: ['Vue', 'Laravel', 'TailwindCss', 'PostgreSql', 'PHP', 'JavaScript', 'Axios'],
@@ -33,7 +33,7 @@ export const projects = [
 
 { 
   id: 4, 
-  backgroundImage: '/works/pmap.jpg',
+  backgroundImage: '/works/pmap.webp',
   name: 'Pappermap', 
   type: 'AI / Enterprise',  
   link: "",

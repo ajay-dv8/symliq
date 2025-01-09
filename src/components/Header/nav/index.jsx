@@ -44,7 +44,7 @@ export default function index() {
       exit="exit" 
       className={styles.menu}
       >
-       <div className={styles.body}>
+       <div className={`${styles.body} z-50`}>
           <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
             <div className={styles.header}>
               <p>Navigation</p>

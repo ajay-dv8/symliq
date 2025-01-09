@@ -2,6 +2,19 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";  
 import { Magnetic } from "./magnetic";
+import MorphingText from "@/components/ui/morphing-text";
+
+const texts = [
+  "we",
+  "Design",
+  "Develop",
+  "Deploy",
+ 
+];
+
+const MorphingTextDemo = () => {
+  return <MorphingText className={"text-colorDark"} texts={texts} />;
+}
 
 export const WhatWeDo = () => { 
 
@@ -100,7 +113,7 @@ export const WhatWeDo = () => {
         animate={textIsInView ? "show" : "hidden"}
         variants={containerVariants}
       >
-        <Magnetic>
+        {/* <Magnetic>
         <motion.h2
           className="text-center text-colorDark ~text-5xl/7xl font-semibold"
           variants={itemVariants}
@@ -125,8 +138,10 @@ export const WhatWeDo = () => {
         >
           Deploy &nbsp;
         </motion.h2>
-        </Magnetic>
- 
+        </Magnetic> */}
+
+
+        <MorphingTextDemo/>      
       </motion.div>
 
       <motion.div 
@@ -160,3 +175,14 @@ export const WhatWeDo = () => {
 };
 
  
+
+
+
+
+
+
+
+// npx shadcn@latest add "https://magicui.design/r/morphing-text"
+
+
+
