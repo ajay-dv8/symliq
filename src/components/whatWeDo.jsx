@@ -1,6 +1,7 @@
 'use client';
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";  
+import { Magnetic } from "./magnetic";
 
 export const WhatWeDo = () => { 
 
@@ -66,20 +67,22 @@ export const WhatWeDo = () => {
             key={index}
             className={`overflow-hidden ${video.size}`}
             drag
-            dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}
+            // dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}
             whileHover={{ scale: 1.5 }} // Scale animation on hover
             variants={itemVariants}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
           >
+            <Magnetic>
             <video
               src={video.src}
               ref={(el) => (videoRefs.current[index] = el)}
               muted={!video.autoplay}
               autoPlay={video.autoplay || false}
               loop={video.autoplay || false}
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-cover rounded-2xl "
             />
+            </Magnetic>
           </motion.div>
         ))}
       </motion.div>
@@ -97,24 +100,32 @@ export const WhatWeDo = () => {
         animate={textIsInView ? "show" : "hidden"}
         variants={containerVariants}
       >
+        <Magnetic>
         <motion.h2
           className="text-center text-colorDark ~text-5xl/7xl font-semibold"
           variants={itemVariants}
         >
           Design &nbsp; <p className="hidden md:visible">.</p>  
         </motion.h2>
+        </Magnetic>
+
+        <Magnetic>
         <motion.h2
           className="text-center text-colorDark ~text-5xl/7xl font-semibold"
           variants={itemVariants}
         >
           Develop &nbsp; <p className="hidden md:visible">.</p>   
         </motion.h2>
+        </Magnetic>
+
+        <Magnetic>
         <motion.h2
           className="text-center text-colorDark ~text-5xl/7xl font-semibold"
           variants={itemVariants}
         >
           Deploy &nbsp;
         </motion.h2>
+        </Magnetic>
  
       </motion.div>
 

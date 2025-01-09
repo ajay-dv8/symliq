@@ -1,6 +1,7 @@
 "use client"
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion' 
+import { Magnetic } from './magnetic';
 
 export const WorksCompleted = () => {
   const textContainerRef = useRef(null); 
@@ -37,9 +38,9 @@ export const WorksCompleted = () => {
       initial="hidden"
       animate={textIsInView ? "show" : "hidden"}
       variants={containerVariants}
-      className='bg-colorDark flex flex-col justify-center md:flex-row ~pb-1/16 gap-8 px-10'
+      className='bg-customBlue flex flex-col justify-center md:flex-row ~pb-1/16 gap-8 md:pt-2 px-10'
     >
-
+      <Magnetic>
       <motion.div 
         variants={itemVariants}
         className="border-x-2 flex items-center border-gradient-to-br from-indigo-300 to-violet-300 rounded-full ~py-3/5 px-10"
@@ -48,7 +49,9 @@ export const WorksCompleted = () => {
         <div className='border-r-2 w-[1px] mx-4 h-[60%]'/>
         <h3 className='~text-xl/3xl text-gradient-to-br from-indigo-300 to-violet-300 '>Projects <br/>Completed</h3>
       </motion.div>
+      </Magnetic>
 
+      <Magnetic>
       <motion.div 
         variants={itemVariants}
         className="border-x-2 flex items-center border-gradient-to-br from-indigo-300 to-violet-300 rounded-full ~py-3/5 px-10"
@@ -57,7 +60,9 @@ export const WorksCompleted = () => {
         <div className='border-r-2 w-[1px] mx-4 h-[60%]'/>
         <h3 className='~text-xl/3xl text-gradient-to-br from-indigo-300 to-violet-300 '>Startups <br/>Developed</h3>
       </motion.div> 
+      </Magnetic>
 
+      <Magnetic>
       <motion.div 
         variants={itemVariants}
         className="border-x-2 flex items-center border-gradient-to-br from-indigo-300 to-violet-300 rounded-full ~py-3/5 px-10"
@@ -66,6 +71,7 @@ export const WorksCompleted = () => {
         <div className='border-r-2 w-[1px] mx-4 h-[60%]'/>
         <h3 className='~text-xl/3xl text-gradient-to-br from-indigo-300 to-violet-300 '>Happy <br/>Customers</h3>
       </motion.div> 
+      </Magnetic>
     </motion.div>
   )
 }

@@ -52,17 +52,21 @@ export function Projects() {
           </div>
         ))}
 
-        <DrawerContent>
+        <DrawerContent >
 
           {selectedProject && (
-            <div className=" w-full ">
-              <div className="flex w-full md:gap-x-24">
-                <div className="flex flex-col flex-[45%] max-w-[30rem]">
+            // selectedProjectDrawer 
+            <div className=" w-full h-[95dvh] md:h-[90dvh] overflow-y-auto">
+              <div className="flex flex-col md:flex-row w-full md:gap-x-24">
+                <div className="flex flex-col flex-[45%] max-w-[30rem] p-4 ">
                   <DrawerHeader >
                     <DrawerTitle 
-                      className="my-10 md:mx-8">{selectedProject.name}</DrawerTitle>
+                      className=" text-left my-4 md:my-10 md:mx-8">
+                        {selectedProject.name}
+                      </DrawerTitle>
+                      
                     <DrawerDescription 
-                      className="~text-lg/4xl md:mx-8 max-w-[20rem]"
+                      className="~text-lg/4xl text-left md:mx-8 max-w-[20rem]"
                     >
                       {selectedProject.desc}
                     </DrawerDescription>
@@ -70,7 +74,7 @@ export function Projects() {
                   <div className=" pb-0">
                     <div className="flex flex-col ">
 
-                      <div className="mt-8 md:mx-12">
+                      <div className="mt-5 md:mt-8 md:mx-12">
                         <p className="text-lg font-semibold mb-4">
                           The Project:
                         </p>
@@ -79,7 +83,7 @@ export function Projects() {
                         </p>
                       </div>
 
-                      <div className="text-left mt-10 md:mx-12">
+                      <div className="text-left mt-6 md:mt-10 md:mx-12">
                         <p className="text-lg font-semibold">
                           Technologies:
                         </p>
@@ -99,7 +103,7 @@ export function Projects() {
                 </div>
 
                 <div className="flex flex-col flex-[55%] justify-center items-center">
-                  <div className="md:p-10">
+                  <div className="p-5 md:p-10">
                     <Image 
                       src={selectedProject.backgroundImage} 
                       alt="" 
@@ -109,8 +113,8 @@ export function Projects() {
                     />      
                   </div>  
 
-                  <div className="flex w-full"> 
-                    <div className="rounded-xl w-full  md:px-10 md:py-5 "> 
+                  <div className="flex flex-col md:flex-row w-full"> 
+                    <div className="rounded-xl w-full px-5 py-5 md:px-10 md:py-5 "> 
                       <Image 
                         src={selectedProject.backgroundImage} 
                         alt="" 
@@ -120,7 +124,7 @@ export function Projects() {
                       />        
                     </div>
 
-                    <div className="rounded-xl w-full  md:px-10 md:py-5 "> 
+                    <div className="rounded-xl w-full px-5 md:px-10 md:py-5 "> 
                       <Image 
                         src={selectedProject.backgroundImage} 
                         alt="" 

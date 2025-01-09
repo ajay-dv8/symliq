@@ -138,13 +138,13 @@ export const Card = ({
   return (<> 
     <motion.button
       layoutId={layout ? `card-${card.name}` : undefined} 
-      className="rounded-3xl bg-gray-100 dark:bg-neutral-900 ~h-48/52 w-72 md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10">
+      className="rounded-3xl bg-colorLight  ~h-48/52 w-72 md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10">
       <div
-        className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
+        className="absolute w-full h-full top-0 inset-x-0 z-30 pointer-events-none" />
       <div className="relative z-40 p-8">
         <motion.p
           layoutId={layout ? `category-${card.testimonial}` : undefined}
-          className="text-colorLight text-sm md:text-base font-sans text-left">
+          className="text-customBlue  text-sm md:text-base font-sans text-left">
           {card.testimonial}  
         </motion.p>
         <motion.p

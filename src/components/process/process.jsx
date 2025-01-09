@@ -23,8 +23,8 @@ export function Process() {
               loop 
               muted 
             />
-          </div> 
-        </div>
+    </div>
+  </div>
       ),
     },
 
@@ -46,8 +46,8 @@ export function Process() {
               loop 
               muted 
             />
-          </div> 
-        </div>
+    </div>
+  </div>
       ),
     },
 
@@ -69,8 +69,8 @@ export function Process() {
               loop 
               muted 
             />
-          </div> 
-        </div>
+    </div>
+  </div>
       ),
     },  
 
@@ -92,8 +92,8 @@ export function Process() {
               loop 
               muted 
             />
-          </div>  
-        </div>
+    </div>
+  </div>
       ),
     },
   ];

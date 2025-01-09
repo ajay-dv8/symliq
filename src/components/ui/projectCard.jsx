@@ -10,7 +10,7 @@ import {
 } from "framer-motion"; 
 import { TiLocationArrow } from "react-icons/ti"; 
 
-const Card = ({ backgroundImage, name,  description, type, totalCards, index }) => {
+const Card = ({ backgroundImage, name,  description, type, totalCards, idx }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -24,7 +24,7 @@ const Card = ({ backgroundImage, name,  description, type, totalCards, index }) 
   return (
     <motion.div 
       style={{
-        zIndex: totalCards - index, // Ensure stacking order
+        zIndex: totalCards - idx, // Ensure stacking order
         scale,
       }}
       className="grid w-full place-content-center px-4 py-12 sticky top-28 "

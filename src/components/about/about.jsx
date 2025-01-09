@@ -6,8 +6,11 @@ const AboutContent = () => (
   <div className="min-h-screen ">
     <section>
       <div className="title titleGreathorned">
-        <span>The great horned owl</span> also known as the tiger owl or the
-        hoot owl, is a large owl native to the Americas.
+        <span>At Symliq, we’re not just building software; we’re crafting solutions that drive businesses forward. As a forward-thinking software development agency, we specialize in delivering tailored digital experiences that transform ideas into reality. Our mission is simple: to empower businesses with cutting-edge technology that ensures growth, scalability, and success.
+
+From startups to enterprises, we blend innovation with expertise to deliver web, mobile, and enterprise applications that solve real-world problems. We thrive on challenges, harnessing the latest tools and methodologies to create products that are not just functional but also intuitive and impactful.
+
+At Symliq, we don’t just develop software — we develop partnerships. Your success is our ultimate goal, and every project we undertake is designed to elevate your brand and streamline your operations.</span> 
       </div>
     </section>
 

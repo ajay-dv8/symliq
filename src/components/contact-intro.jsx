@@ -8,6 +8,7 @@ import Image from "next/image";
 import { MouseHighlight } from "./ui/mouse-highlight";
 import TrippyScroll from "./ui/trippy-scroll";
 import { WorksCompleted } from "./works-completed";
+import { Magnetic } from "./magnetic";
 
 gsap.registerPlugin(ScrollTrigger )
 
@@ -33,10 +34,10 @@ export const ContactIntro = () => {
     // })
   }, [])
  
-  return ( 
+  return (  
     <div className=" w-screen min-h-screen ">
       <div id="clip" className="h-dvh w-screen ">
-        <div className="mask-clip-path about-image bg-colorDark">
+        <div className="mask-clip-path about-image bg-customBlue">
          
           {/* <Image
             src="/darkbg.webp"
@@ -50,7 +51,7 @@ export const ContactIntro = () => {
             {/* <WorksCompleted/> */}
         </div>
       </div>
-    </div> 
+    </div>  
   )
 }
 
@@ -101,11 +102,13 @@ const itemVariants = {
     variants={containerVariants}
     className=""
   >
+    <Magnetic>
     <motion.h1 
       variants={itemVariants}
       className="text-center text-colorLight ~text-3xl/7xl font-semibold">
       Let's Work Together
     </motion.h1>
+    </Magnetic>
 
   <motion.div 
     ref={subTextContainerRef}
