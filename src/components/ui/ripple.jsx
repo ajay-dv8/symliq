@@ -11,7 +11,7 @@ const Ripple = React.memo(function Ripple({
   return (
     (<div
       className={cn(
-        "pointer-events-none select-none absolute inset-0 [mask-image:linear-gradient(to_bottom,white,transparent)]",
+        "absolute inset-0 [mask-image:linear-gradient(to_bottom,white,transparent)]",
         className
       )}>
       {Array.from({ length: numCircles }, (_, i) => {

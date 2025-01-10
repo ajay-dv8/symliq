@@ -34,22 +34,22 @@ export default function index() {
     }, [])
 
     return (
-        <>
+        <div className='w-screen'>
         <div ref={header} className={styles.header}>
-            <div className={styles.logo}>
+            <div className="flex cursor-pointer">
                 <Image width={150} height={70} src="/fullLogo.png" alt="logo" className="w-24 md:w-40"/>
             </div>
             
         </div>
 
         <div ref={button} className={`${styles.headerButtonContainer}`}>
-            <Rounded onClick={() => {setIsActive(!isActive)}} className={`${styles.button} bg-colorDark/30 backdrop-blur-sm`}>
+            <Rounded onClick={() => {setIsActive(!isActive)}} className={`${styles.button} bg-colorDark/30 backdrop-blur-sm size-12 m-4 md:size-20 md:m-5 rounded-full`}>
                 <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
             </Rounded>
         </div>
         <AnimatePresence mode="wait">
             {isActive && <Nav />}
         </AnimatePresence>
-        </>
+        </div>
     )
 }
