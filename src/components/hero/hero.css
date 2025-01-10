@@ -32,6 +32,6 @@ span {
   height: 1.2vh;
   width: 50vw;
   margin-bottom: -0.2vh;
-  background: var(--dark);
+  background: #008080;
   display: block;
 }

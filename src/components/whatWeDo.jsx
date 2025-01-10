@@ -5,42 +5,41 @@ import { Magnetic } from "./magnetic";
 import MorphingText from "@/components/ui/morphing-text";
 
 const texts = [
-  "we",
-  "Design",
-  "Develop",
-  "Deploy",
- 
+  "@symliq", 
+  "We Design",
+  "We Develop",
+  "We Deploy", 
 ];
 
-const MorphingTextDemo = () => {
+const BlendingText = () => {
   return <MorphingText className={"text-colorDark"} texts={texts} />;
 }
 
 export const WhatWeDo = () => { 
 
-  const videoRefs = useRef([]);
-  const imagesContainerRef = useRef(null);
-  const textContainerRef = useRef(null);
+  // const videoRefs = useRef([]);
+  // const imagesContainerRef = useRef(null);
+  // const textContainerRef = useRef(null);
   const subTextContainerRef = useRef(null);
 
-  const imagesIsInView = useInView(imagesContainerRef, { once: false, threshold: 0.3 });
-  const textIsInView = useInView(textContainerRef, { once: false, threshold: 0.4 });
+  // const imagesIsInView = useInView(imagesContainerRef, { once: false, threshold: 0.3 });
+  // const textIsInView = useInView(textContainerRef, { once: false, threshold: 0.4 });
   const subTextIsInView = useInView(subTextContainerRef, { once: false, threshold: 0.5 });
 
-  const handleMouseEnter = (index) => {
-    videoRefs.current[index]?.play();
-  };
+  // const handleMouseEnter = (index) => {
+  //   videoRefs.current[index]?.play();
+  // };
 
-  const handleMouseLeave = (index) => {
-    videoRefs.current[index]?.pause();
-    videoRefs.current[index].currentTime = 0; // Reset to the start
-  };
+  // const handleMouseLeave = (index) => {
+  //   videoRefs.current[index]?.pause();
+  //   videoRefs.current[index].currentTime = 0; // Reset to the start
+  // };
 
-  const videos = [
-    { id: '1', src: "/vid/vidf.webm", size: "w-52" },
-    { id: '2', src: "/vid/vidf.webm", size: "w-64 ", autoplay: true }, // Middle video
-    { id: '3', src: "/vid/vidf.webm", size: "w-52" },
-  ];
+  // const videos = [
+  //   { id: '1', src: "/vid/vidf.webm", size: "w-52" },
+  //   { id: '2', src: "/vid/vidf.webm", size: "w-64 ", autoplay: true }, // Middle video
+  //   { id: '3', src: "/vid/vidf.webm", size: "w-52" },
+  // ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -68,7 +67,7 @@ export const WhatWeDo = () => {
  
   return (
     <div className="w-full bg-colorLight text-colorDark p-10 ~mt-10/40" >
-      <motion.div
+      {/* <motion.div
         ref={imagesContainerRef}
         className="hidden md:flex justify-center ~gap-16/20 items-end"
         initial="hidden"
@@ -98,51 +97,19 @@ export const WhatWeDo = () => {
             </Magnetic>
           </motion.div>
         ))}
-      </motion.div>
+      </motion.div> */}
 
-      <p className="font-bold text-colorDark/50 text-center text-xl ~mt-1/20 mb-16">
+      <p className="font-bold text-colorDark/50 text-center text-xl mb-16">
         What We Do
       </p>
  
 
       {/* big title */}
-      <motion.div
-        className="flex justify-center flex-col md:flex-row ~gap-8/20"
-        ref={textContainerRef}
-        initial="hidden"
-        animate={textIsInView ? "show" : "hidden"}
-        variants={containerVariants}
-      >
-        {/* <Magnetic>
-        <motion.h2
-          className="text-center text-colorDark ~text-5xl/7xl font-semibold"
-          variants={itemVariants}
-        >
-          Design &nbsp; <p className="hidden md:visible">.</p>  
-        </motion.h2>
-        </Magnetic>
-
-        <Magnetic>
-        <motion.h2
-          className="text-center text-colorDark ~text-5xl/7xl font-semibold"
-          variants={itemVariants}
-        >
-          Develop &nbsp; <p className="hidden md:visible">.</p>   
-        </motion.h2>
-        </Magnetic>
-
-        <Magnetic>
-        <motion.h2
-          className="text-center text-colorDark ~text-5xl/7xl font-semibold"
-          variants={itemVariants}
-        >
-          Deploy &nbsp;
-        </motion.h2>
-        </Magnetic> */}
-
-
-        <MorphingTextDemo/>      
-      </motion.div>
+      <Magnetic> 
+      <div className="flex justify-center"> 
+        <BlendingText /> 
+      </div> 
+      </Magnetic>
 
       <motion.div 
         ref={subTextContainerRef}
@@ -177,12 +144,4 @@ export const WhatWeDo = () => {
  
 
 
-
-
-
-
-
-// npx shadcn@latest add "https://magicui.design/r/morphing-text"
-
-
-
+ 

@@ -46,7 +46,8 @@ export default {
         colorLight: "#eee",
         colorDark: "#161616",
         customBlue: "#1c69f9",
-        customOrange: "#fe9000"
+        customOrange: "#fe9000",
+        teal: "#008080"
       },
     },
   },

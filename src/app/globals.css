@@ -26,14 +26,20 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1c69f9;
+  background: #008080;
   border-radius: 5px;
   mix-blend-mode: difference;
 }
 
-/* Handle on hover */
+/* Handle on hover */ 
+ 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  /* background: #555; */
+  width: 12px;
+  opacity: 0.7;
+  transition: all;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (prefers-color-scheme: dark) {

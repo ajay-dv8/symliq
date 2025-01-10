@@ -10,7 +10,7 @@ export function Testimonials() {
   ));
 
   return (
-     <div className="w-full h-full py-20 bg-customBlue">
+     <div className="w-full h-full py-20 bg-teal/80">
       <Titles
         smallTitle={"Testimonials"}
         bigTitle="What our customers say"

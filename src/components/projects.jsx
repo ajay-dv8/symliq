@@ -91,7 +91,7 @@ export function Projects() {
                           {selectedProject.stack.map((tech, index) => (
                             <li 
                               key={index}
-                              className="inline-block border border-customOrange rounded-md px-3 mt-4 py-1" 
+                              className="inline-block border border-teal rounded-md px-3 mt-4 py-1" 
                             >
                               {tech}
                             </li>
@@ -156,63 +156,4 @@ export function Projects() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// "use client" 
-// import { Titles } from "./titles";
-// import Card from "./ui/projectCard";
-//  import { projects } from '../constants/projects' 
-
-// export const Projects = () => {
- 
-//   return (
-//     <div className='w-full px-10 pb-20 mb-20' >
-//       <div className="mb-10"> 
-//         <Titles 
-//           smallTitle='Our Projects'
-//           bigTitle="Featured Projects"
-//           subLineOne="Discover innovative solutions"
-//           subLineTwo="That our customers Love"
-//         />
-//      </div> 
-      
-//       <div className="relative">
-//         {projects.map((project) => (
- 
-//             <Card 
-//             key={project.id}  
-//             // type={project.type} 
-
-//             name={project.name}
-//             // description={project.description}
-//             backgroundImage={project.backgroundImage}
-//           /> 
-//         ))}
-//       </div> 
-
-//       {/* Fix product button */}
-
-//       {/* <div className="justify-center flex mt-48">
-//         <SwapBtn
-//         className="text-colorDark bg-colorLight  hover:bg-colorLight"
-//         link={"#"}
-//         children={"More"}
-//         />
-//       </div> */}
-//     </div>
-//   )
-// }
-
- 
  

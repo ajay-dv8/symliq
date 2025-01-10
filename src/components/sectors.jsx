@@ -99,7 +99,7 @@ export const Sectors = () => {
   };
 
   return (
-    <div className="flex flex-col items-end w-fit">
+    <div className="flex flex-col items-end overflow-x-hidden">
       <div className="relative w-full h-px mb-5">
         <div
           onMouseEnter={() => {
@@ -132,22 +132,22 @@ export const Sectors = () => {
         <div className="flex mt-12">
           <p className="text-colorDark">Areas</p>
           <div className="flex w-full ml-8 flex-wrap gap-2.5">
-            <p className="border border-customOrange text-colorDark rounded-full uppercase text-lg py-1 px-3">
+            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
               E-commerce
             </p>
-            <p className="border border-customOrange text-colorDark rounded-full uppercase text-lg py-1 px-3">
+            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
               Finance
             </p>
-            <p className="border border-customOrange text-colorDark rounded-full uppercase text-lg py-1 px-3">
+            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
               Education
             </p>
-            <p className="border border-customOrange text-colorDark rounded-full uppercase text-lg py-1 px-3">
+            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
               Social
             </p>
-            <p className="border border-customOrange text-colorDark rounded-full uppercase text-lg py-1 px-3">
+            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
               Entertainment
             </p>
-            <p className="border border-customOrange text-colorDark rounded-full uppercase text-lg py-1 px-3">
+            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
               Medicine
             </p>
           </div>

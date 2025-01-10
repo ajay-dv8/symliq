@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 import "./hero.css";
 import { useEffect } from "react";
 import Image from "next/image"; 
+import { Magnetic } from "../magnetic";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,12 +34,16 @@ export const Hero = () => {
   return (
     <section className="trigger overflow-x-hidden relative h-dvh">
       <span className="left px-8">
+        <Magnetic>
         <h2 className="text-6xl font-semibold">
           Software Design 
         </h2>
+        </Magnetic>
+        <Magnetic>
         <h2 className="text-6xl font-semibold">
           and  Development
         </h2>
+        </Magnetic>
         <br />
         <p className="font-light text-colorLight/70">
         We’re a team of software experts dedicated to building powerful, tailor-made software-solutions for businesses like yours. Let’s turn your ideas into impactful digital experiences.

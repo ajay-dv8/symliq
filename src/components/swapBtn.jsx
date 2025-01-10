@@ -35,7 +35,7 @@ export const SwapBtn = ({ children, link, className }) => {
   }, []); // Empty dependency array means this runs once on mount
 
   return (
-    <a href={link} className={cn("button text-colorDark hover:bg-customBlue/80 transition-all ease-in-out duration-700 bg-colorLight rounded-full inline-grid p-2 overflow-hidden text-center w-full border border-customBlue ", className)}>
+    <a href={link} className={cn("button text-colorDark hover:bg-teal/80 transition-all hover:text-colorLight ease-in-out duration-700 bg-colorLight rounded-full inline-grid p-2 overflow-hidden text-center w-full border border-teal ", className)}>
       <p>{children}</p>
     </a>
   ); 

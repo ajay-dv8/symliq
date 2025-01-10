@@ -37,7 +37,7 @@ export const ContactIntro = () => {
   return (  
     <div className=" w-screen min-h-screen ">
       <div id="clip" className="h-dvh w-screen ">
-        <div className="mask-clip-path about-image bg-customBlue">
+        <div className="mask-clip-path about-image bg-teal/80">
          
           {/* <Image
             src="/darkbg.webp"
