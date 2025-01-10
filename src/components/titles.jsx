@@ -1,8 +1,7 @@
 "use client"
 import React, { useRef } from 'react'
 import { motion, useInView } from "framer-motion";  
-import { cn } from '@/lib/utils';
-import { Magnetic } from './magnetic';
+import { cn } from '@/lib/utils'; 
 
 export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className, subClassName, smallClassName }) => {
   const textContainerRef = useRef(null);
@@ -47,14 +46,12 @@ export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className
         animate={textIsInView ? "show" : "hidden"}
         variants={containerVariants}
         className=""
-      >
-        <Magnetic>
+      > 
         <motion.h1 
           variants={itemVariants}
           className={cn("text-center text-colorDark ~text-3xl/7xl font-semibold", className)}>
         {bigTitle}
-        </motion.h1>
-        </Magnetic>
+        </motion.h1> 
 
       <motion.div 
         ref={subTextContainerRef}

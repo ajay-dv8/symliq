@@ -36,7 +36,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className=" " >  
+    <div id='contact' className=" " >  
       <motion.div 
         ref={textContainerRef}
         initial="hidden"

@@ -66,7 +66,7 @@ export const WhatWeDo = () => {
   };
  
   return (
-    <div className="w-full bg-colorLight text-colorDark p-10 ~mt-10/40" >
+    <div id="about" className="w-full bg-colorLight text-colorDark p-10 ~mt-10/40" >
       {/* <motion.div
         ref={imagesContainerRef}
         className="hidden md:flex justify-center ~gap-16/20 items-end"

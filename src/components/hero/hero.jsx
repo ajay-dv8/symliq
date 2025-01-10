@@ -33,7 +33,7 @@ export const Hero = () => {
 
   return (
     <section className="trigger overflow-x-hidden relative h-dvh">
-      <span className="left px-8">
+      <span className="left px-14">
         <Magnetic>
         <h2 className="text-6xl font-semibold">
           Software Design 

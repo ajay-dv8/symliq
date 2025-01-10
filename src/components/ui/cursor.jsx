@@ -12,8 +12,8 @@ export const Cursor = () => {
 
   const mouseVariant = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 8,
+      x: mousePosition.x - 18,
+      y: mousePosition.y - 10,
     }
   }
 
@@ -37,9 +37,10 @@ export const Cursor = () => {
     <motion.div 
       variants={mouseVariant}
       animate="default"
-      className='size-3 bg-blue-500 z-50 rounded-full fixed top-0 left-0'
-    />
-    {/* </motion.div> */}
+      className=' bg-transparent mix-blend-difference border border-teal p-1 z-50 rounded-full fixed top-0 left-0'
+    >
+      <div className="size-2 bg-teal/80 rounded-full"/>
+    </motion.div>
     </>
       
   )

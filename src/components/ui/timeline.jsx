@@ -26,7 +26,7 @@ export const Timeline = ({
 
   return (
     (<div
-      className="w-full bg-colorLight md:px-10"
+      className="w-full bg-colorLight md:px-20"
       ref={containerRef}> 
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

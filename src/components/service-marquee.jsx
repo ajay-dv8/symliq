@@ -36,7 +36,7 @@ export function ServicesMarquee() {
   };
 
   return (
-    <div className="relative ~my-12/24 z-0">
+    <div id="service" className="relative ~my-12/24 z-0">
     <motion.div
       className=""
       ref={textContainerRef} 

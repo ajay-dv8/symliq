@@ -26,7 +26,7 @@ export function Projects() {
   }
 
   return (
-    <div className='w-full px-10 pb-20 mb-20' >
+    <div id="work" className='w-full px-10 pb-20 mb-20' >
       <div className="mb-10"> 
         <Titles 
           smallTitle='Case Study'

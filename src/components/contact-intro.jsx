@@ -43,7 +43,10 @@ export const ContactIntro = () => {
             className="absolute left-0 top-0 size-full object-cover"
           />  */}
             <ContactTitle/>
+            <div id="contact">
+
             <Contact/> 
+            </div>
             {/* <WorksCompleted/> */}
         </div>
       </div>
@@ -123,4 +126,4 @@ const itemVariants = {
 </div> 
   )
 }
- 
+  

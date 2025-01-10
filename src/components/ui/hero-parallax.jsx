@@ -60,7 +60,7 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     (<div
-      className="max-w-7xl relative mx-auto ~py-10/40 px-10 w-full  left-0 top-0">
+      className="max-w-7xl relative mx-auto ~py-10/40 px-10 md:px-20 w-full  left-0 top-0">
       <h1 className=" ~text-3xl/7xl font-semibold text-colorDark ">
         The Ultimate <br /> development agency
       </h1>
