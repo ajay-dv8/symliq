@@ -17,6 +17,7 @@ import { AnimatePresence } from 'framer-motion';
 import Preloader from '../components/Preloader';
 import { HeroResponse } from '@/components/hero/hero-response';
 import { Sectors } from '@/components/sectors';
+// import { ContactSection } from '@/components/contact-section/contactSection';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,7 +50,7 @@ export default function Home() {
 // },[])
 
   return (
-    <div className=" p-0 m-0">
+    <div className=" ">
       <ReactLenis root>
         <AnimatePresence mode='wait'>
            {isLoading && <Preloader/>}
@@ -65,10 +66,10 @@ export default function Home() {
         <TechStack/> 
         <Process/> 
         <ContactCTA/> 
-        <ContactIntro/>  
+        <ContactIntro/> 
         <WorksCompleted/> 
           <Testimonials/>
-        <div className='relative h-[720px] md:h-[500px] bottom-0'
+        <div className='relative h-[720px] md:h-[500px] bottom-0 '
           style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
         > 
           <div className='relative h-[calc(100vh+960px)] md:h-[calc(100vh+500px)] -top-[100vh]'> 

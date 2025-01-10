@@ -7,95 +7,80 @@ export function ParallaxHero() {
 }
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    title: "Moonbeam", 
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
   },
   {
-    title: "Web Development",
-    link: "#",
+    title: "Web Development", 
     thumbnail:
       "/services/ind.png",
   },
   {
-    title: "Mobile Applications",
-    link: "#",
+    title: "Mobile Applications", 
     thumbnail:
       "/services/mob.png",
   },
 
   {
-    title: "Editorially",
-    link: "https://editorially.org",
+    title: "Editorially", 
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/editorially.png",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
+    title: "Editrix AI", 
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/editrix.png",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    title: "Pixel Perfect", 
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
   },
 
   {
-    title: "Graphic Design",
-    link: "#",
+    title: "Graphic Design", 
     thumbnail:
       "/services/des.png",
   },
   {
-    title: "eCommerce ",
-    link: "#",
+    title: "eCommerce ", 
     thumbnail:
       "/services/ecommerce.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    title: "Tailwind Master Kit", 
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    title: "SmartBridge", 
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    title: "Renderwork Studio", 
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
   },
 
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
+    title: "Creme Digital", 
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
   },
   {
-    title: "UI/UX",
-    link: "#",
+    title: "UI/UX", 
     thumbnail:
       "/services/uiux.png",
   },
   {
-    title: "Enterprise Applications",
-    link: "#",
+    title: "Enterprise Applications", 
     thumbnail:
       "/services/indt.png",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    title: "E Free Invoice", 
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
   },

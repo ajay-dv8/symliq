@@ -4,10 +4,6 @@ import {ScrollTrigger} from "gsap/all";
 import { Contact } from "./contact-us/contact";
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView } from "framer-motion";  
-import Image from "next/image";
-import { MouseHighlight } from "./ui/mouse-highlight";
-import TrippyScroll from "./ui/trippy-scroll";
-import { WorksCompleted } from "./works-completed";
 import { Magnetic } from "./magnetic";
 
 gsap.registerPlugin(ScrollTrigger )
@@ -128,11 +124,3 @@ const itemVariants = {
   )
 }
  
-
-export const Socials = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}

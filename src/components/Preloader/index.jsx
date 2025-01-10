@@ -1,5 +1,5 @@
 'use client';
-import './preloader.css';
+// import './preloader.css';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
@@ -36,15 +36,39 @@ export default function Index() {
     }
 
     return (
-        <motion.div variants={slideUp} initial="initial" exit="exit" className={"introduction"}>
+        <motion.div 
+            variants={slideUp} 
+            initial="initial" 
+            exit="exit" 
+            className="h-screen w-screen flex items-center justify-center fixed z-[99] bg-teal"
+        >
             {dimension.width > 0 && 
             <>
-                <motion.p variants={opacity} initial="initial" animate="enter" className='textAnimate'><span className='textAnimateSpan'></span>{words[index]}</motion.p>
-                <svg >
-                    <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
+                <motion.p 
+                    variants={opacity} 
+                    initial="initial" 
+                    animate="enter" 
+                    className='flex text-colorLight text-4xl md:text-5xl items-center absolute z-[1] '>
+                        <span 
+                            className='block size-[10px] bg-white rounded-full mr-[10px]'
+                        ></span> 
+                        {words[index]}
+                    </motion.p>
+                <svg className='absolute top-0 w-full h-[calc(100%+300px)]'>
+                    <motion.path 
+                        className={"bg-teal"} 
+                        variants={curve} 
+                        initial="initial" 
+                        exit="exit"
+                        style={{
+                            fill: "#008080"
+                        }}>
+                    </motion.path>
                 </svg>
             </>
             }
         </motion.div>
     )
 }
+
+ 

@@ -1,10 +1,7 @@
 "use client";
 import { useRef, useEffect } from "react";
 
-// interface MouseEvent {
-//   movementY: number;
-//   clientX: number;
-// }
+ 
 
 export const Sectors = () => {
   // Define a reference to an SVGPathElement
@@ -99,7 +96,7 @@ export const Sectors = () => {
   };
 
   return (
-    <div className="flex flex-col items-end overflow-x-hidden">
+    <div className="flex flex-col items-end overflow-hidden">
       <div className="relative w-full h-px mb-5">
         <div
           onMouseEnter={() => {
@@ -120,16 +117,17 @@ export const Sectors = () => {
           ></path>
         </svg>
       </div>
-      <div className="flex flex-col items-start md:items-end w-full px-4 md:w-3/5">
-        <div className="flex justify-end flex-col md:flex-row">
-          <p className="text-sm text-colorDark mb-4 md:mb-[1px] mt-6">Smart Development</p>
-          <p className="~text-2xl/4xl text-colorDark md:w-3/4 ml-8">
+      <div className="flex flex-col  items-start md:items-end w-full px-4 md:w-3/5">
+        <div className="flex justify-end flex-col md:flex-row ">
+          <p className="text-sm text-colorDark mb-4 md:mb-[1px] mt-6 md:mt-[1px]">Smart Development</p>
+          <p className="~text-base/lg font-normal md:font-semibold text-colorDark md:w-3/4 ml-8 ">
             Combining unique design and rich technology, we build digital
             products exactly as they were designed, without shortcuts or
             simplifications.
           </p>
         </div>
-        <div className="flex mt-12">
+
+        {/* <div className="flex mt-12">
           <p className="text-colorDark">Areas</p>
           <div className="flex w-full ml-8 flex-wrap gap-2.5">
             <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
@@ -148,10 +146,16 @@ export const Sectors = () => {
               Entertainment
             </p>
             <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
-              Medicine
+              Hospitality
+            </p>
+            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
+              Housing
+            </p>
+            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
+              Health
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

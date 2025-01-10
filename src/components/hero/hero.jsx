@@ -71,7 +71,7 @@ export const Hero = () => {
         </p>
       </span>
       {Array.from({ length: 100 }, (_, i) => (
-        <div key={i} className="box"></div>
+        <div key={i} className="box bg-teal"></div>
       ))}
     </section> 
   );

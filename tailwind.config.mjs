@@ -17,6 +17,9 @@ export default {
     screens, // Tailwind's default screens, in `rem`
     fontSize, // Tailwind's default font sizes, in `rem` (including line heights)
     extend: {
+      fontFamily: {
+        nunito: ['var(--font-nunito)', 'sans-serif'], // Add Nunito to Tailwind
+      },
       screens: {
         xs: '20rem'
       },

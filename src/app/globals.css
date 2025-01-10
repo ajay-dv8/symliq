@@ -5,6 +5,7 @@
 :root {
   --background: #eee;
   --foreground: #161616;
+  font-family: 'Nunito', sans-serif;
 }
 
 * {
@@ -52,7 +53,8 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Nunito', sans-serif;
 }
 
 
@@ -77,6 +79,9 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+/* .about-image { /* h-[60dvh ] was original value */
+  /* @apply absolute left-1/2 top-0 z-20 h-96 w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw]; */
+/* } */ 
 .about-image { /* h-[60dvh ] was original value */
   @apply absolute left-1/2 top-0 z-20 h-96 w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
 }

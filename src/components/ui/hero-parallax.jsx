@@ -1,9 +1,7 @@
 "use client"; 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import React from 'react'
-import { ServicesMarquee } from "../service-marquee";
+import Image from "next/image"; 
+import React from "react";
 
 export const HeroParallax = ({
   products
@@ -63,10 +61,10 @@ export const Header = () => {
   return (
     (<div
       className="max-w-7xl relative mx-auto ~py-10/40 px-10 w-full  left-0 top-0">
-      <h1 className=" text-3xl md:text-7xl font-semibold text-colorDark ">
+      <h1 className=" ~text-3xl/7xl font-semibold text-colorDark ">
         The Ultimate <br /> development agency
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 text-colorDark/70 ">
+      <p className="max-w-2xl ~text-base/lg font-normal md:font-semibold mt-8 text-colorDark/70 ">
         We build beautiful products with the latest technologies and frameworks.
         We are a team of passionate developers and designers that love to build
         amazing products.
@@ -89,14 +87,14 @@ export const ProductCard = ({
       }}
       key={product.title}
       className="group/product ~h-48/96 ~w-[16rem]/[30rem] relative flex-shrink-0">
-      <Link href={product.link} className="block group-hover/product:shadow-2xl ">
+      <div className="block group-hover/product:shadow-2xl ">
         <Image
           src={product.thumbnail}
           height="600"
           width="600"
           className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title} />
-      </Link>
+      </div>
       <div
         className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
       <h2

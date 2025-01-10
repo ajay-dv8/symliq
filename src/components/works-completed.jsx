@@ -38,7 +38,7 @@ export const WorksCompleted = () => {
       initial="hidden"
       animate={textIsInView ? "show" : "hidden"}
       variants={containerVariants}
-      className='bg-teal/80 flex flex-col justify-center md:flex-row ~pb-1/16 gap-8 md:pt-2 px-10'
+      className='bg-teal/80 flex flex-col justify-center md:flex-row ~pb-1/16 gap-8 px-10'
     >
       <Magnetic>
       <motion.div 
