@@ -7,12 +7,7 @@ import Link from './Link';
 import Curve from './Curve';
 import Footer from './Footer';
 
-const navItems = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  
+const navItems = [ 
   {
     title: "About",
     href: "/about",

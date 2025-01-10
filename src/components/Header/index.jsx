@@ -43,7 +43,7 @@ export default function index() {
         </div>
 
         <div ref={button} className={`${styles.headerButtonContainer}`}>
-            <Rounded onClick={() => {setIsActive(!isActive)}} className={`${styles.button}  bg-black/30 backdrop-blur-sm`}>
+            <Rounded onClick={() => {setIsActive(!isActive)}} className={`${styles.button} bg-colorDark/30 backdrop-blur-sm`}>
                 <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
             </Rounded>
         </div>

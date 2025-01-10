@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import styles from './styles.module.scss';
+// import styles from './styles.module.scss';
 
 export default function Index() {
 
@@ -22,8 +22,11 @@ export default function Index() {
   }
 
   return (
-    <svg className={styles.svgCurve}>
+    <svg className="absolute top-0 left-[-99px] w-[100px] h-screen bg-[rgb(41, 41, 41)] stroke-none">
         <motion.path variants={curve} initial="initial" animate="enter" exit="exit"></motion.path>
     </svg>
   )
 }
+
+// TODO: change bg color
+ 

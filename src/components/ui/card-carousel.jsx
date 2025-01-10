@@ -112,13 +112,13 @@ export const Carousel = ({
         </div>
         <div className="flex justify-end gap-2 mr-10">
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-colorLight flex items-center justify-center disabled:opacity-50"
+            className="relative h-10 w-10 rounded-full bg-colorLight flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}>
             <IconArrowNarrowLeft className="h-6 w-6 text-teal/80" />
           </button>
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-colorLight flex items-center justify-center disabled:opacity-50"
+            className="relative h-10 w-10 rounded-full bg-colorLight flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}>
             <IconArrowNarrowRight className="h-6 w-6 text-teal/80" />
@@ -141,7 +141,7 @@ export const Card = ({
       className="rounded-3xl bg-gradient-to-br from-teal/60 to-teal/10 border border-colorLight/50 ~h-48/52 w-72 md:w-96 overflow-hidden flex flex-col items-center justify-center relative p-4 shadow-2xl hover:scale-105 transition-all duration-700 ease-in-out">
       <div
         className="absolute w-full h-full top-0 inset-x-0 z-30 pointer-events-none" />
-      <div className="relative z-40 ">
+      <div className="relative ">
         <motion.p
           layoutId={layout ? `category-${card.testimonial}` : undefined}
           className="text-colorLight  text-sm md:text-base font-sans text-left">

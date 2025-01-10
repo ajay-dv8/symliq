@@ -1,4 +1,4 @@
-import styles from './style.module.scss';
+ 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { slide, scale } from '../../animation';
@@ -9,7 +9,7 @@ export default function Index({data, isActive, setSelectedIndicator}) {
   
     return (
       <motion.div 
-        className={styles.link} 
+        className="relative flex items-center"
         onMouseEnter={() => {setSelectedIndicator(href)}} 
         custom={index} 
         variants={slide} 
@@ -20,9 +20,12 @@ export default function Index({data, isActive, setSelectedIndicator}) {
         <motion.div 
           variants={scale} 
           animate={isActive ? "open" : "closed"} 
-          className={styles.indicator}>
+          className="size-[10px] bg-colorLight rounded-full absolute left-[-30px]">
         </motion.div>
         <Link href={href}>{title}</Link>
       </motion.div>
     )
 }
+
+
+ 
