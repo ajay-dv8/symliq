@@ -36,7 +36,7 @@ export const Contact = () => {
   };
 
   return (
-    <div id='contact' className=" " >  
+    <div className=" " >  
       <motion.div 
         ref={textContainerRef}
         initial="hidden"
@@ -47,6 +47,7 @@ export const Contact = () => {
           <a href={generalInfo.emailLink} className=' '>
         <Magnetic>
           <motion.h1 
+            id='contact'
             ref={textRef}
             variants={itemVariants}
             className="text-4xl md:text-9xl mt-8 text-colorLight font-semibold text-center drop-shadow-xl"

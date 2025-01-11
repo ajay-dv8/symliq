@@ -7,25 +7,26 @@ import { menuSlide } from '../animation';
 import Link from './Link';
 import Curve from './Curve';
 import Footer from './Footer';
+import { navItems } from '@/constants/nav-items';
 
-const navItems = [ 
-  {
-    title: "About",
-    href: "#about",
-  },
-  {
-    title: "Services",
-    href: "#service",
-  },
-  {
-    title: "case study",
-    href: "#work",
-  },
-  {
-    title: "Contact",
-    href: "#contact",
-  },
-]
+// const navItems = [ 
+//   {
+//     title: "About",
+//     href: "#about",
+//   },
+//   {
+//     title: "Services",
+//     href: "#service",
+//   },
+//   {
+//     title: "case study",
+//     href: "#work",
+//   },
+//   {
+//     title: "Contact",
+//     href: "#contact",
+//   },
+// ]
 
 export default function index() {
 

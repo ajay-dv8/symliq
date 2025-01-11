@@ -23,23 +23,27 @@ export const NewHero = () => {
       rotateY: -18,
       rotateZ: -25,
       transition: {
-        staggerChildren: 0.3, // Stagger each child animation by 0.3 seconds
+        staggerChildren: 0.7, // Stagger each child animation by 0.3 seconds
       },
     },
   };
 
   const childVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7, staggerChildren: 0.5 } },
   };
 
   return (
     <>
       <div className="relative w-full h-screen md:h-[128vh] flex flex-col items-center overflow-hidden bg-colorDark">
-        <div className="max-w-5xl mt-36 mx-auto">
-          <h2 className="~text-3xl/7xl font-bold leading-8">
+        <div className="max-w-[53rem] mt-36 ">
+          <h2 className="~text-3xl/7xl font-semibold leading-8">
             Driving growth and success through innovative software solutions
           </h2>
+
+          <p className="max-w-[40rem] font-normal text-xl mt-8 text-colorLight/70">
+            We’re a team of software experts dedicated to building powerful, tailor-made software-solutions for businesses like yours. Let’s turn your ideas into impactful digital experiences.
+          </p>
         </div>
 
         {/* Diagonal Div */}

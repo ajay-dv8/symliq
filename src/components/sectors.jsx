@@ -120,7 +120,7 @@ export const Sectors = () => {
       <div className="flex flex-col  items-start md:items-end w-full px-4 md:px-20 md:w-3/5">
         <div className="flex justify-end flex-col md:flex-row ">
           <p className="text-sm text-colorDark mb-4 md:mb-[1px] mt-6 md:mt-[1px]">Smart Development</p>
-          <p className="~text-base/lg font-normal md:font-semibold text-colorDark md:w-3/4 ml-8 ">
+          <p className="~text-base/lg font-normal md:font-semibold text-colorDark/70 md:w-3/4 ml-8 ">
             Combining unique design and rich technology, we build digital
             products exactly as they were designed, without shortcuts or
             simplifications.

@@ -17,7 +17,7 @@ export const navItems = [
     icon: <HiFolderOpen className=" "/>
   },
   {
-    title: "Our Process",
+    title: "Process",
     href: "#process",
     icon: <HiRectangleGroup className=" "/>
   },

@@ -8,7 +8,6 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion"; 
-import { TiLocationArrow } from "react-icons/ti"; 
 
 const Card = ({ backgroundImage, name,  description, type, totalCards, idx }) => {
   const ref = useRef(null);
@@ -106,8 +105,8 @@ const TiltCard = ({ backgroundImage, name, description, type  }) => {
           </div>
 
           {/* Bottom Section */}
-          <div className="px-6 mb-0 relative ~-bottom-16/44  bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 pb-[px] md:pb-2">
-            <h2 className="~text-xl/4xl ~font-normal/semibold text-colorLight mb-2 md:mb-4">{name}</h2>
+          <div className="px-6 mb-0 relative ~-bottom-16/44  bg-gray-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 ">
+            <h2 className="~text-xl/4xl ~font-normal/semibold text-colorLight mb-1">{name}</h2>
             <p className="hidden md:block ~text-sm/lg text-colorLight">{description}</p>
           </div>
         </div>

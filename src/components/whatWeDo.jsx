@@ -120,19 +120,19 @@ export const WhatWeDo = () => {
       >
         <motion.p 
           variants={itemVariants} 
-          className="text-center text-base block md:hidden"
+          className="text-center text-base block md:hidden text-colorDark/70"
         >
           We craft cutting-edge digital products that blend stunning design, seamless development, and the power of the latest technology!
         </motion.p>
         <motion.p 
           variants={itemVariants} 
-          className="text-center text-xl font-semibold hidden md:block"
+          className="text-center text-xl font-semibold hidden md:block text-colorDark/70"
         >
           We craft cutting-edge digital products that blend stunning design,
         </motion.p>
         <motion.p 
           variants={itemVariants}
-          className="text-center text-xl font-semibold hidden md:block"
+          className="text-center text-xl font-semibold hidden md:block text-colorDark/70"
         >
           seamless development, and the power of the latest technology!
         </motion.p>

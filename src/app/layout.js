@@ -16,7 +16,7 @@ import Header from '@/components/Header'
 
 const montserrat = Montserrat({
   subsets: ['latin'], // Supports Latin characters
-  weight: ['400', '600', '700'], // Choose the weights you need
+  weight: ['300', '500', '700'], // Choose the weights you need
   variable: '--font-nunito', // Optional: Use a CSS variable
 });
 

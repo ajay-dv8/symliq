@@ -27,7 +27,7 @@ export default function Index({ data, isActive, setSelectedIndicator }) {
         const targetPosition = section.offsetTop; // Get the target scroll position
         const startPosition = window.scrollY; // Get current scroll position
         const distance = targetPosition - startPosition; // Calculate the distance to scroll
-        const duration = 1000; // Scroll duration in milliseconds
+        const duration = 1500; // Scroll duration in milliseconds
         let startTime = null;
   
         const easeInOutQuad = (t, b, c, d) => {

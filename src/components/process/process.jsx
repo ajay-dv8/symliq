@@ -99,7 +99,7 @@ export function Process() {
   ];
 
   return (
-    (<div className="w-full">
+    (<div id="process" className="w-full">
       <Titles
       smallTitle="Our Process"
       bigTitle={"Trust The Process"}
