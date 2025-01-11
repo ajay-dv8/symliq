@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { navItems } from "@/constants/nav-items";
-import { TiArrowLeft, TiArrowRight, TiCode, TiCalendar } from "react-icons/ti";
+import { HiArrowLeft, HiArrowRight, HiCalendar, HiOutlineCloudArrowUp } from "react-icons/hi2";
 import Link from "next/link";
 import { HiOutlineChevronDown, HiHome } from "react-icons/hi2";
 import { sectors } from "@/constants/sectors";
@@ -36,12 +36,12 @@ export const NewHero = () => {
   return (
     <>
       <div className="relative w-full h-screen md:h-[128vh] flex flex-col items-center overflow-hidden bg-colorDark">
-        <div className="max-w-[53rem] mt-36 ">
+        <div className="max-w-[53rem] mt-36 px-6">
           <h2 className="~text-3xl/7xl font-semibold leading-8">
-            Driving growth and success through innovative software solutions
+            Driving growth through innovative software solutions
           </h2>
 
-          <p className="max-w-[40rem] font-normal text-xl mt-8 text-colorLight/70">
+          <p className="max-w-[40rem] font-normal ~text-sm/xl ~mt-4/8 text-colorLight/70">
             We’re a team of software experts dedicated to building powerful, tailor-made software-solutions for businesses like yours. Let’s turn your ideas into impactful digital experiences.
           </p>
         </div>
@@ -52,24 +52,24 @@ export const NewHero = () => {
           animate="visible"
           variants={containerVariants}
           style={{ perspective: 800 }}
-          className="absolute p-[2px] top-[25rem] left-16 bg-colorDark w-[calc(100vw+10.5rem)] h-[45rem] text-white rounded-tl-2xl shadow-lg border-t border-l border-colorLight/20"
+          className="absolute p-[2px] ~top-[20rem]/[25rem] left-[7rem] md:left-16 bg-colorDark w-[calc(100vw+10.5rem)] h-[45rem] text-white rounded-tl-2xl shadow-lg border-t border-l border-colorLight/20"
         >
           <div className="flex flex-row w-full rounded-2xl">
             {/* LEFT MENU DIV */}
             <motion.div
               variants={childVariants}
-              className="flex-[25%] p-4 h-full w-full bg-colorDark rounded-tl-2xl"
+              className="flex-[25%] ~p-2/4 h-full w-full bg-colorDark rounded-tl-2xl"
             >
               {/* 1st Menu Items */}
               <div className="flex justify-between items-center mb-4">
                 <div className="flex gap-2">
-                  <div className="size-4 rounded-full bg-gray-500"></div>
-                  <div className="size-4 rounded-full bg-gray-500"></div>
-                  <div className="size-4 rounded-full bg-gray-500"></div>
+                  <div className="~size-2/4 rounded-full bg-gray-500"></div>
+                  <div className="~size-2/4 rounded-full bg-gray-500"></div>
+                  <div className="~size-2/4 rounded-full bg-gray-500"></div>
                 </div>
                 <div className="flex gap-2">
-                  <TiArrowLeft className="text-4xl font-extralight text-gray-200" />
-                  <TiArrowRight className="text-4xl font-extralight text-gray-500" />
+                  <HiArrowLeft className="~text-lg/3xl font-extralight text-gray-200" />
+                  <HiArrowRight className="~text-lg/3xl font-extralight text-gray-500" />
                 </div>
               </div>
 
@@ -78,31 +78,31 @@ export const NewHero = () => {
                 variants={childVariants}
                 className="flex justify-between mt-2 mb-6 items-center"
               >
-                <Image src="/fullLogo.png" width={128} height={70} />
+                <Image src="/fullLogo.png" width={128} height={70} className="~w-20/40"/>
                 <div className="flex gap-2">
-                  <TiCalendar className="text-3xl font-extralight text-gray-500" />
-                  <TiCode className="text-4xl font-extralight text-gray-300" />
+                  <HiCalendar className="~text-lg/3xl font-extralight text-gray-500" />
+                  <HiOutlineCloudArrowUp className="~text-lg/3xl font-extralight text-gray-300" />
                 </div>
               </motion.div>
 
               {/* Nav Items */}
-              <motion.div variants={childVariants} className="flex flex-col gap-3 px-4 mb-4">
+              <motion.div variants={childVariants} className="flex flex-col ~gap-1/3 px-4 ~mb-1/4">
                 <div className="mb-3">
-                  <p className="text-2xl font-semibold mt-6 bg-gray-700 bg-opacity-50 py-1 px-4 rounded-lg">
+                  <p className="~text-lg/2xl font-semibold ~mt-3/6 bg-gray-700 bg-opacity-50 py-1 ~px-2/4 rounded-lg">
                     Navigation
                   </p>
                 </div>
 
-                <div className="flex gap-x-4 mb-3">
-                  <HiHome className="text-3xl text-gray-200" />
-                  <p className="text-gray-200 text-2xl">Home</p>
+                <div className="flex ~gap-x-2/4 ~mb-1/3">
+                  <HiHome className="~text-lg/3xl text-gray-200" />
+                  <p className="text-gray-200 ~text-lg/2xl">Home</p>
                 </div>
 
                 {navItems.map((item, index) => (
                   <Link
                     key={index}
                     href={item.href}
-                    className="text-gray-300 text-lg hover:scale-105 hover:text-white self-start flex gap-x-4 transition-all ease-in-out duration-700"
+                    className="text-gray-300 ~text-base/lg hover:scale-105 hover:text-white self-start flex ~gap-x-2/4 transition-all ease-in-out duration-700"
                   >
                     {item.icon}
                     {item.title}
@@ -111,18 +111,18 @@ export const NewHero = () => {
               </motion.div>
 
               {/* Services */}
-              <motion.div variants={childVariants} className="mt-6">
+              <motion.div variants={childVariants} className="~mt-3/6">
                 <div className="flex items-center">
-                  <p className="text-2xl text-gray-300 font-semibold mt-6 mb-4 bg-opacity-50 py-1 px-4 rounded-lg">
+                  <p className="~text-lg/2xl text-gray-300 font-semibold ~mt-3/6 ~mb-2/4 bg-opacity-50 py-1 ~px-2/4 rounded-lg">
                     Sectors
                   </p>
-                  <HiOutlineChevronDown className="text-xl text-gray-300" />
+                  <HiOutlineChevronDown className="~text-base/xl text-gray-300" />
                 </div>
 
                 {sectors.map((sector, id) => (
                   <p
                     key={sector.id}
-                    className="text-lg mb-2 self-start text-gray-300 px-4"
+                    className="~text-base/lg mb-2 self-start text-gray-300 ~px-2/4"
                   >
                     {sector.name}
                   </p>
