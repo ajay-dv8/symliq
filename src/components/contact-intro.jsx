@@ -31,23 +31,14 @@ export const ContactIntro = () => {
   }, [])
  
   return (  
-    <div className=" w-screen min-h-screen ">
+    <div className=" w-screen min-h-screen contact-intro-fade-in">
       <div id="clip" className="h-dvh w-screen ">
         <div className="mask-clip-path about-image bg-teal/80">
-         
-          {/* <Image
-            src="/darkbg.webp"
-            alt="bg"
-            height={500}
-            width={500}
-            className="absolute left-0 top-0 size-full object-cover"
-          />  */}
+          
             <ContactTitle/>
-            <div id="contact">
-
+            <div id="contact"> 
             <Contact/> 
-            </div>
-            {/* <WorksCompleted/> */}
+            </div> 
         </div>
       </div>
     </div>  
