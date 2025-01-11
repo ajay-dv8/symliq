@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from "next/link"
 import Image from 'next/image'
-import { MouseHighlight } from './ui/mouse-highlight'
-import { TiSocialInstagram, TiSocialLinkedin } from 'react-icons/ti';
+import { MouseHighlight } from './ui/mouse-highlight' 
 import { generalInfo } from '@/constants/info';
 
 const quickLinks = ["Home", "About", "Services", "Products", "Case study", "Contact" ];

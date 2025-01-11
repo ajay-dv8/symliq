@@ -17,6 +17,7 @@ import { AnimatePresence } from 'framer-motion';
 import Preloader from '../components/Preloader';
 import { HeroResponse } from '@/components/hero/hero-response';
 import { Sectors } from '@/components/sectors';
+import { NewHero } from '@/components/newHero';
 // import { ContactSection } from '@/components/contact-section/contactSection';
 
 export default function Home() {
@@ -52,10 +53,11 @@ export default function Home() {
   return (
     <div className=" ">
       <ReactLenis root>
-        <AnimatePresence mode='wait'>
+        {/* <AnimatePresence mode='wait'>
            {isLoading && <Preloader/>}
         </AnimatePresence> 
-        <HeroResponse />
+        <HeroResponse /> */}
+        <NewHero/>
 
         <WhatWeDo/>
 

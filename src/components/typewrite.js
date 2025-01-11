@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 import React from "react";
 
 class TypeWriter extends React.PureComponent {
@@ -9,7 +9,7 @@ class TypeWriter extends React.PureComponent {
       text: ""
     };
 
-    this.tick = this.tick.bind(this);
+    this.tick = this.tick.bind(this); 
   }
 
   componentDidMount() {
@@ -63,7 +63,7 @@ class TypeWriter extends React.PureComponent {
   }
 
   render() {
-    return <p className="inline-block text-colorDark">{this.state.text}</p>;
+    return <p className={ "inline-block text-colorDark" }>{this.state.text}</p>;
   }
 }
 
