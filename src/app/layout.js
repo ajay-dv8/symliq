@@ -1,4 +1,4 @@
-import { Nunito } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css"; 
 // import { Navbar } from "@/components/nav";
 import { Cursor } from "@/components/ui/cursor";
@@ -14,7 +14,7 @@ import Header from '@/components/Header'
 //   subsets: ["latin"],
 // });
 
-const nunito = Nunito({
+const montserrat = Montserrat({
   subsets: ['latin'], // Supports Latin characters
   weight: ['400', '600', '700'], // Choose the weights you need
   variable: '--font-nunito', // Optional: Use a CSS variable
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en"> 
       <body
-        className={`${nunito.variable} antialiased overflow-x-hidden   bg-colorLight`}
+        className={`${montserrat.variable} antialiased overflow-x-hidden   bg-colorLight`}
       >
         <Cursor/>
         {/* <Navbar/> */}
