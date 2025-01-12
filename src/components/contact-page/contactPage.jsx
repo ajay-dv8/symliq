@@ -15,7 +15,7 @@ export const ContactPage = () => {
 
         <div className='m-4 flex flex-col justify-center items-center'>
 
-          <span className='text-colorDark font-bold transition-all ease-in-out duration-700 hover:text-teal text-lg'>+233 550-414-170 </span>
+          <span className='text-colorDark font-bold transition-all ease-in-out duration-700 hover:text-teal text-lg'>Call line </span>
 
           <a href='tel:+233550414170' id='call_btn'>CALL</a>
         </div>

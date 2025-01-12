@@ -8,6 +8,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Rounded from '../RoundedButton'; 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function index() {
     const header = useRef(null);
@@ -35,9 +36,9 @@ export default function index() {
     return (
         <div className='w-screen'>
         <div ref={header} className={styles.header}>
-            <div className="flex cursor-pointer">
+            <Link href={"/"} className="flex cursor-pointer">
                 <Image width={150} height={70} src="/fullLogo.png" alt="logo" className="w-24 md:w-40"/>
-            </div>
+            </Link>
             
         </div>
 
