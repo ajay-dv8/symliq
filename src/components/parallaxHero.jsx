@@ -14,12 +14,12 @@ export const products = [
   {
     title: "Web Development", 
     thumbnail:
-      "/services/ind.png",
+      "/services/ind.webp",
   },
   {
     title: "Mobile Applications", 
     thumbnail:
-      "/services/mob.png",
+      "/services/mob.webp",
   },
 
   {
@@ -41,12 +41,12 @@ export const products = [
   {
     title: "Graphic Design", 
     thumbnail:
-      "/services/des.png",
+      "/services/des.webp",
   },
   {
     title: "eCommerce ", 
     thumbnail:
-      "/services/ecommerce.png",
+      "/services/ecommerce.webp",
   },
   {
     title: "Tailwind Master Kit", 
@@ -72,12 +72,12 @@ export const products = [
   {
     title: "UI/UX", 
     thumbnail:
-      "/services/uiux.png",
+      "/services/uiux.webp",
   },
   {
     title: "Enterprise Applications", 
     thumbnail:
-      "/services/indt.png",
+      "/services/indt.webp",
   },
   {
     title: "E Free Invoice", 

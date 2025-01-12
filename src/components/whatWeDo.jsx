@@ -67,38 +67,7 @@ export const WhatWeDo = () => {
  
   return (
     <div id="about" className="w-full bg-colorLight text-colorDark p-10 ~mt-10/40" >
-      {/* <motion.div
-        ref={imagesContainerRef}
-        className="hidden md:flex justify-center ~gap-16/20 items-end"
-        initial="hidden"
-        animate={imagesIsInView ? "show" : "hidden"}
-        variants={containerVariants}
-      >
-        {videos.map((video, index) => (
-          <motion.div
-            key={index}
-            className={`overflow-hidden ${video.size}`}
-            drag
-            // dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}
-            whileHover={{ scale: 1.5 }} // Scale animation on hover
-            variants={itemVariants}
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={() => handleMouseLeave(index)}
-          >
-            <Magnetic>
-            <video
-              src={video.src}
-              ref={(el) => (videoRefs.current[index] = el)}
-              muted={!video.autoplay}
-              autoPlay={video.autoplay || false}
-              loop={video.autoplay || false}
-              className="w-full h-full object-cover rounded-2xl "
-            />
-            </Magnetic>
-          </motion.div>
-        ))}
-      </motion.div> */}
-
+    
       <p className="font-bold text-colorDark/50 text-center text-xl mb-16">
         What We Do
       </p>
