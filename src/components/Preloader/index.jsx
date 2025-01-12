@@ -1,5 +1,4 @@
-'use client';
-// import './preloader.css';
+'use client'; 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';

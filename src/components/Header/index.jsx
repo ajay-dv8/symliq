@@ -7,7 +7,6 @@ import Nav from './nav';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Rounded from '../RoundedButton'; 
-import { Magnetic } from '../magnetic';
 import Image from 'next/image';
 
 export default function index() {
