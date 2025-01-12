@@ -4,6 +4,7 @@ import * as React from "react"
 import { Drawer as DrawerPrimitive } from "vaul"
 
 import { cn } from "@/lib/utils"
+import { HiMiniXMark } from "react-icons/hi2"
 
 const Drawer = ({
   shouldScaleBackground = true,
@@ -38,6 +39,9 @@ const DrawerContent = React.forwardRef(({ className, children, ...props }, ref) 
       )}
       {...props}>
       <div className="mx-auto mt-4 h-2 w-[100px] rounded-full bg-teal/40" />
+      <DrawerClose className="p-0 m-0 absolute right-8 top-2">
+        <HiMiniXMark className="text-teal text-3xl hover:scale-110 md:text-5xl transition-all ease-in-out duration-500"/>
+      </DrawerClose>
       {children}
     </DrawerPrimitive.Content>
   </DrawerPortal>

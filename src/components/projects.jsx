@@ -16,6 +16,7 @@ import { projects } from "@/constants/projects"
 import { Titles } from "./titles";
 import Card from "./ui/projectCard";
 import Image from "next/image";
+import { HiMiniXMark } from "react-icons/hi2";
  
 
 export function Projects() {
@@ -63,7 +64,7 @@ export function Projects() {
                     <DrawerTitle 
                       className=" text-left my-4 md:my-10 md:mx-8">
                         {selectedProject.name}
-                      </DrawerTitle>
+                    </DrawerTitle>
                       
                     <DrawerDescription 
                       className="~text-lg/4xl text-left md:mx-8 max-w-[20rem]"
@@ -103,6 +104,7 @@ export function Projects() {
                 </div>
 
                 <div className="flex flex-col flex-[55%] justify-center items-center">
+ 
                   <div className="p-5 md:p-10">
                     <Image 
                       src={selectedProject.backgroundImage} 
