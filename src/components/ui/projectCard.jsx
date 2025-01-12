@@ -9,7 +9,7 @@ import {
   useTransform,
 } from "framer-motion"; 
 
-const Card = ({ backgroundImage, name,  description, type, totalCards, idx }) => {
+const Card = ({ backgroundImage, name,  description, type, totalCards, index }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -23,7 +23,7 @@ const Card = ({ backgroundImage, name,  description, type, totalCards, idx }) =>
   return (
     <motion.div 
       style={{
-        zIndex: totalCards - idx, // Ensure stacking order
+        // zIndex: totalCards - index, // Ensure stacking order
         scale,
       }}
       className="grid w-full place-content-center px-4 py-12 sticky top-28 "

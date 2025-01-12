@@ -10,12 +10,6 @@ export const Footer = () => {
   return (
     <footer 
       className='p-0 w-full bg-colorLight ' 
-      // style={{
-      //   backgroundImage: `url('/nbg.avif')`,
-      //   backgroundSize: "cover",
-      //   backgroundPosition: "center",
-      //   backgroundRepeat: "no-repeat" 
-      // }}
     >
       <MouseHighlight containerClassName={"  ~p-8/24 w-full text-colorLight/70"}>
      
@@ -23,7 +17,7 @@ export const Footer = () => {
           {/* Logo and Tagline */}
           <div className="~space-y-4/10">
             <div className=" ">
-               <Image src={"/fullLogo.png"} alt='logo' width={350} height={150}/> 
+               <Image src={"/fullLogo.png"} alt="logo" width={350} height={150}/> 
             </div>
             <p className="text-base md:text-2xl text-center text-balance md:text-left max-w-md">
             At Symliq, we combine teamwork, innovation, and expertise to deliver high-quality, creative solutions. Our collaborative approach ensures every project exceeds client expectations, bringing your vision to life with excellence.
@@ -95,8 +89,6 @@ export const Footer = () => {
         Copyright ©2024 All rights reserved Symliq
       </div>
       </MouseHighlight>
-
-         
  
     </footer>
   )

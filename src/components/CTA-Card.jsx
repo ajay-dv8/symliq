@@ -3,6 +3,7 @@
 import React from "react"; 
 import TypeWriter from "./typewrite";
 import { SwapBtn } from "./swapBtn"; 
+import Link from "next/link";
  
 const examples = [
   "Can you redesign my existing website?",
@@ -30,9 +31,10 @@ const BlockInTextCard = ({ tag, text, examples }) => {
         </div>
       </div>
       <hr className="border-neutral-300" /> 
-      <SwapBtn> 
+  
+        <SwapBtn link={"/contact"}> 
           Contact Support 
-      </SwapBtn>
+        </SwapBtn> 
     </div>
   );
 };

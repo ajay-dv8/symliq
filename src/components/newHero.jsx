@@ -78,7 +78,7 @@ export const NewHero = () => {
                 variants={childVariants}
                 className="flex justify-between mt-2 mb-6 items-center"
               >
-                <Image src="/fullLogo.png" width={128} height={70} className="~w-20/40"/>
+                <Image src="/fullLogo.png" alt="logo" width={128} height={70} className="~w-20/40"/>
                 <div className="flex gap-2">
                   <HiCalendar className="~text-lg/3xl font-extralight text-gray-500" />
                   <HiOutlineCloudArrowUp className="~text-lg/3xl font-extralight text-gray-300" />
@@ -136,10 +136,11 @@ export const NewHero = () => {
               className="flex-[75%] h-full w-full pt-4"
             >
               <Image
+                alt="dashImage"
                 src="/dash.webp"
                 width={1280}
                 height={920}
-                className="object-cover rounded-tl-2xl"
+                className="object-cover rounded-3xl"
               />
             </motion.div>
           </div>
@@ -221,7 +222,7 @@ export const NewHero = () => {
 
 //             {/* logo and icons */}
 //             <div className=" flex justify-between mt-2 mb-6 items-center">
-//               <Image src="/fullLogo.png" width={128} height={70}/>
+//               <Image src="/fullLogo.png" alt="logo" width={128} height={70}/>
 
 //               <div className="flex gap-2">
 //                 <TiCalendar className="text-3xl font-extralight text-gray-500"/>
@@ -266,7 +267,7 @@ export const NewHero = () => {
  
 //            {/* Dash Image */}     
 //           <div className="flex-[75%] h-full w-full pt-4">
-//             <Image src="/dash.webp" width={1280} height={920} className='object-cover rounded-tl-2xl'/>
+//             <Image src="/dash.webp" alt="logo" width={1280} height={920} className='object-cover rounded-tl-2xl'/>
 //           </div>
 //         </div>
 //       </motion.div>

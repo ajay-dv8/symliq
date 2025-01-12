@@ -1,6 +1,5 @@
 "use client";
 import { useRef, useEffect } from "react";
-
  
 
 export const Sectors = () => {
@@ -126,36 +125,7 @@ export const Sectors = () => {
             simplifications.
           </p>
         </div>
-
-        {/* <div className="flex mt-12">
-          <p className="text-colorDark">Areas</p>
-          <div className="flex w-full ml-8 flex-wrap gap-2.5">
-            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
-              E-commerce
-            </p>
-            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
-              Finance
-            </p>
-            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
-              Education
-            </p>
-            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
-              Social
-            </p>
-            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
-              Entertainment
-            </p>
-            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
-              Hospitality
-            </p>
-            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
-              Housing
-            </p>
-            <p className="border border-[#008080] text-colorDark rounded-full uppercase text-base py-1 px-3">
-              Health
-            </p>
-          </div>
-        </div> */}
+ 
       </div>
     </div>
   );

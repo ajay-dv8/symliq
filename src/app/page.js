@@ -1,6 +1,5 @@
-"use client"
+ 
 import { ReactLenis } from 'lenis/react' 
-import { useState, useEffect } from 'react';
 
 import { ParallaxHero } from "@/components/parallaxHero";  
 import { WhatWeDo } from "@/components/whatWeDo"
@@ -13,54 +12,17 @@ import { ContactIntro } from "@/components/contact-intro";
 import { Footer } from '@/components/footer'; 
 import { WorksCompleted } from '@/components/works-completed';
 import { Testimonials } from '@/components/testimonials'; 
-import { AnimatePresence } from 'framer-motion';
-import Preloader from '../components/Preloader';
-import { HeroResponse } from '@/components/hero/hero-response';
 import { Sectors } from '@/components/sectors';
-import { NewHero } from '@/components/newHero';
-// import { ContactSection } from '@/components/contact-section/contactSection';
+import { NewHero } from '@/components/newHero'; 
+
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect( () => {
-    (
-      async () => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default
-        const locomotiveScroll = new LocomotiveScroll();
-
-        setTimeout( () => {
-          setIsLoading(false);
-          document.body.style.cursor = 'default'
-          window.scrollTo(0,0);
-        }, 2000)
-      }
-    )()
-  }, [])
-
-
-//   useEffect( () => {
-//     const lenis = new Lenis()
-   
-//     function raf(time) {
-//         lenis.raf(time)
-//         requestAnimationFrame(raf)
-//     }
-
-//     requestAnimationFrame(raf)
-// },[])
-
+ 
   return (
     <div className=" ">
-      <ReactLenis root>
-        {/* <AnimatePresence mode='wait'>
-           {isLoading && <Preloader/>}
-        </AnimatePresence> 
-        <HeroResponse /> */}
-        <NewHero/>
-
-        <WhatWeDo/>
-
+      <ReactLenis root> 
+        <NewHero/> 
+        <WhatWeDo/> 
         <ServicesMarquee/>
         <Sectors/>
         <ParallaxHero/>  

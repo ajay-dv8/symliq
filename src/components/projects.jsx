@@ -106,7 +106,7 @@ export function Projects() {
                   <div className="p-5 md:p-10">
                     <Image 
                       src={selectedProject.backgroundImage} 
-                      alt="" 
+                      alt="pro-image" 
                       width={720} 
                       height={480}
                       className="aspect-video w-full object-cover rounded-2xl"
@@ -117,7 +117,7 @@ export function Projects() {
                     <div className="rounded-xl w-full px-5 py-5 md:px-10 md:py-5 "> 
                       <Image 
                         src={selectedProject.backgroundImage} 
-                        alt="" 
+                        alt="pro-image" 
                         width={360} 
                         height={360}
                         className="aspect-square w-full object-cover rounded-2xl"
@@ -127,7 +127,7 @@ export function Projects() {
                     <div className="rounded-xl w-full px-5 md:px-10 md:py-5 "> 
                       <Image 
                         src={selectedProject.backgroundImage} 
-                        alt="" 
+                        alt="pro-image" 
                         width={360} 
                         height={360}
                         className="aspect-square w-full object-cover rounded-2xl"

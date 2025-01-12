@@ -59,7 +59,7 @@ export function TechStack() {
 
       <div
         className=" rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative my-4 overflow-hidden">
-        <InfiniteMovingCards type="image" items={stack} direction="right" speed="fast" />
+        <InfiniteMovingCards type="image" items={stackTwo} direction="right" speed="fast" />
       </div> 
     
     </>
@@ -110,5 +110,51 @@ const stack = [
   {
     name: "postgre", 
      image: "/svg/postgre.svg"
+  }, 
+];
+const stackTwo = [
+  {
+     name: "vsCode", 
+     image: "/svg/vscode.svg"
+  },
+  {
+    name: "fastapi", 
+     image: "/svg/fastapi.svg"
+  },
+  {
+    name: "firebase", 
+     image: "/svg/firebase.svg"
+  },
+  {
+    name: "mysql", 
+     image: "/svg/mysql.svg"
+  },
+  {
+    name: "flutter", 
+     image: "/svg/flutter.svg"
+  },
+  {
+    name: "node", 
+     image: "/svg/node.svg"
+  },
+  {
+    name: "graphql", 
+     image: "/svg/graphql.svg"
+  },
+  {
+    name: "redux", 
+     image: "/svg/redux.svg"
+  },
+  {
+    name: "docker", 
+     image: "/svg/docker.svg"
+  }, 
+  {
+    name: "aws", 
+     image: "/svg/aws.svg"
+  },
+  {
+    name: "googlecloud", 
+     image: "/svg/googlecloud.svg"
   }, 
 ];

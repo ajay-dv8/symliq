@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from "react";
 import gsap from "gsap"
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"; 
 
 export const SwapBtn = ({ children, link, className }) => {
   useEffect(() => {
