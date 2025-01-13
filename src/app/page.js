@@ -13,7 +13,8 @@ import { Footer } from '@/components/footer';
 import { WorksCompleted } from '@/components/works-completed';
 import { Testimonials } from '@/components/testimonials'; 
 import { Sectors } from '@/components/sectors';
-import { NewHero } from '@/components/newHero'; 
+// import { NewHero } from '@/components/newHero'; 
+import { Hero } from '@/components/hero';
 
 
 export default function Home() {
@@ -21,7 +22,8 @@ export default function Home() {
   return (
     <div className=" ">
       <ReactLenis root> 
-        <NewHero/> 
+        {/* <NewHero/>  */}
+        <Hero/>
         <WhatWeDo/> 
         <ServicesMarquee/>
         <Sectors/>

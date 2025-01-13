@@ -16,31 +16,10 @@ const BlendingText = () => {
 }
 
 export const WhatWeDo = () => { 
-
-  // const videoRefs = useRef([]);
-  // const imagesContainerRef = useRef(null);
-  // const textContainerRef = useRef(null);
-  const subTextContainerRef = useRef(null);
-
-  // const imagesIsInView = useInView(imagesContainerRef, { once: false, threshold: 0.3 });
-  // const textIsInView = useInView(textContainerRef, { once: false, threshold: 0.4 });
+ 
+  const subTextContainerRef = useRef(null);  
   const subTextIsInView = useInView(subTextContainerRef, { once: false, threshold: 0.5 });
-
-  // const handleMouseEnter = (index) => {
-  //   videoRefs.current[index]?.play();
-  // };
-
-  // const handleMouseLeave = (index) => {
-  //   videoRefs.current[index]?.pause();
-  //   videoRefs.current[index].currentTime = 0; // Reset to the start
-  // };
-
-  // const videos = [
-  //   { id: '1', src: "/vid/vidf.webm", size: "w-52" },
-  //   { id: '2', src: "/vid/vidf.webm", size: "w-64 ", autoplay: true }, // Middle video
-  //   { id: '3', src: "/vid/vidf.webm", size: "w-52" },
-  // ];
-
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -71,8 +50,7 @@ export const WhatWeDo = () => {
       <p className="font-bold text-colorDark/50 text-center text-xl mb-16">
         What We Do
       </p>
- 
-
+  
       {/* big title */}
       <Magnetic> 
       <div className="flex justify-center"> 
@@ -111,6 +89,4 @@ export const WhatWeDo = () => {
 };
 
  
-
-
  
