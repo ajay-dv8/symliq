@@ -2,6 +2,7 @@
 export const projects = [
   { 
     id: 1, 
+    link: "https://duotonemaker.netlify.app/",
     backgroundImage: '/works/duotone.jpg',
     name: 'Duotone Maker', 
     type: 'Web Application',  
@@ -12,6 +13,7 @@ export const projects = [
   },
   { 
   id: 2, 
+  link: "https://zivotconsult.org/",
   name: 'Zivot Consult', 
   type: 'Brand / Marketing', 
   backgroundImage: '/works/zivot.webp', 
@@ -22,6 +24,7 @@ export const projects = [
 }, 
 { 
   id: 3, 
+  link: "",
   name: 'Aljani',
   backgroundImage: '/works/alanis.webp',
   type: 'eCommerce',  
@@ -32,6 +35,7 @@ export const projects = [
 },
 {
   id: 4, 
+  link: "https://play.google.com/store/apps/details?id=com.acacia.acaciahealthinsurance&hl=en",
   backgroundImage: '/works/caclap.webp',
   name: 'Acacia', 
   type: 'Health',  
@@ -43,6 +47,7 @@ export const projects = [
 
 { 
   id: 5, 
+  link: "https://www.pappermap.com/",
   backgroundImage: '/works/pmap.webp',
   name: 'Pappermap', 
   type: 'AI / Enterprise',  
@@ -53,6 +58,7 @@ export const projects = [
 },
 {
   id: 6, 
+  link: "",
   backgroundImage: '/works/fdnslap.webp',
   name: 'FireDNS', 
   type: 'Health',  

@@ -3,6 +3,7 @@
 import { Titles } from "./titles";
 import { ProContentCard } from "@/components/ui/p-content-card"
 import { projects } from "@/constants/projects" 
+import Link from "next/link";
 
 export function ProCard() { 
   return (
@@ -18,13 +19,13 @@ export function ProCard() {
  
     <div className="grid md:grid-cols-2 gap-12 md:gap-20 ~mx-8/20">
       {projects.map((project, index) => (
-        <div key={index} className="hover:scale-105 transition-all ease-in-out duration-700 rounded-lg">
+        <Link href={project.link} key={index} className="hover:scale-105 transition-all ease-in-out duration-700 rounded-lg">
           <ProContentCard
             backgroundImage={project.backgroundImage} 
             title={project.name} 
             description={project.desc} 
           />
-        </div>
+        </Link>
       ))}
     </div>
     </div>
