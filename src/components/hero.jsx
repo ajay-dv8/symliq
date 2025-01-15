@@ -2,47 +2,76 @@
 import { TextGenerateEffect } from "./ui/text-generate-effect"; 
 import { motion } from "framer-motion";
 
+ 
+import { BackgroundGradientAnimation } from "@/components/ui/bg-grdient-animation";
+import { HiArrowDown } from "react-icons/hi2";
 
-export const Hero = () => {
+export function Hero() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      {/* Animated Top Half */}
-      <motion.div
-        className="absolute top-0 left-0 w-full h-1/2 bg-[#008080]/90 z-0"
-        animate={{
-          y: ["0%", "100%"],  
-        }}
-        transition={{
-          duration: 25, 
-          repeat: Infinity, 
-          repeatType: "loop",  
-          ease: "linear", 
-        }}
-      ></motion.div>
-
-      {/* Animated Bottom Half */}
-      <motion.div
-        className="absolute bottom-0 left-0 w-full h-1/2 bg-[#eeeeee] z-0"
-        animate={{
-          y: ["0%", "-100%"], 
-        }}
-        transition={{
-          duration: 25,  
-          repeat: Infinity, 
-          repeatType: "loop", 
-          ease: "linear", 
-        }}
-      ></motion.div>
-
-      {/* Centered Div */}
-      <div
-        className="w-[100vw] h-[100vh] flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-teal/60 rounded-2xl p-8 backdrop-filter backdrop-blur-xl z-0"
-      >
+    <BackgroundGradientAnimation>
+      <div className="absolute z-50 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
+        <div className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/50">
         <HeroTitle />
-      </div>
-    </div>
+        </div>
+
+        <div className="w-10 h-16 border-2 rounded-full absolute bottom-6 p-2"> 
+          <HiArrowDown className="w-full h-full text-white animate-bounce" />
+        </div>
+      </div> 
+    </BackgroundGradientAnimation>
   );
-};
+}
+
+
+
+
+
+
+
+
+
+
+
+// export const Hero = () => {
+//   return (
+//     <div className="relative w-full h-screen overflow-hidden">
+//       {/* Animated Top Half */}
+//       <motion.div
+//         className="absolute top-0 left-0 w-full h-1/2 bg-[#008080]/90 z-0"
+//         animate={{
+//           y: ["0%", "100%"],  
+//         }}
+//         transition={{
+//           duration: 25, 
+//           repeat: Infinity, 
+//           repeatType: "loop",  
+//           ease: "linear", 
+//         }}
+//       ></motion.div>
+
+//       {/* Animated Bottom Half */}
+//       <motion.div
+//         className="absolute bottom-0 left-0 w-full h-1/2 bg-[#eeeeee] z-0"
+//         animate={{
+//           y: ["0%", "-100%"], 
+//         }}
+//         transition={{
+//           duration: 25,  
+//           repeat: Infinity, 
+//           repeatType: "loop", 
+//           ease: "linear", 
+//         }}
+//       ></motion.div>
+
+//       {/* Centered Div */}
+//       <div
+//         className="w-[100vw] h-[100vh] flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-teal/60 rounded-2xl p-8 backdrop-filter backdrop-blur-xl z-0"
+//       >
+//         <HeroTitle />
+//       </div>
+//     </div>
+//   );
+// };
 
 
 
