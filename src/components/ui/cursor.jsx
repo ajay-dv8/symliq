@@ -10,8 +10,8 @@ export const Cursor = () => {
 
   const mouseVariant = {
     default: {
-      x: mousePosition.x - 18,
-      y: mousePosition.y - 10,
+      x: mousePosition.x - 20,
+      y: mousePosition.y - 16,
     }
   }
 

@@ -40,8 +40,7 @@ export default function index() {
       },
     }); 
   }, []);
-
-  //     font-weight: 300;
+ 
   return (
     <div className="w-screen z-50">
       <div
@@ -52,7 +51,7 @@ export default function index() {
           <Image
             width={150}
             height={70}
-            src="/fullLogo.png"
+            src="/fullLogo.webp"
             alt="logo"
             className="w-24 md:w-40"
           />

@@ -18,9 +18,7 @@ export const Footer = () => {
           <div className="~space-y-4/10">
             <div className=" ">
                <Image 
-                // loading='lazy' 
-                // placeholder='blur' 
-                src={"/fullLogo.png"} 
+                src={"/fullLogo.webp"} 
                 alt="logo" 
                 width={350} 
                 height={150}
