@@ -34,7 +34,7 @@ export default function index() {
     }, [])
 
     return (
-        <div className='w-screen'>
+        <div className='w-screen z-50'>
         <div ref={header} className={styles.header}>
             <Link href={"/"} className="flex cursor-pointer">
                 <Image width={150} height={70} src="/fullLogo.png" alt="logo" className="w-24 md:w-40"/>

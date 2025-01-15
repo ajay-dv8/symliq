@@ -12,9 +12,10 @@ import { ContactIntro } from "@/components/contact-intro";
 import { Footer } from '@/components/footer'; 
 import { WorksCompleted } from '@/components/works-completed';
 import { Testimonials } from '@/components/testimonials'; 
-import { Sectors } from '@/components/sectors';
+// import { Sectors } from '@/components/sectors';
 // import { NewHero } from '@/components/newHero'; 
 import { Hero } from '@/components/hero';
+import { ProCard } from '@/components/p-card';
 
 
 export default function Home() {
@@ -26,9 +27,10 @@ export default function Home() {
         <Hero/>
         <WhatWeDo/> 
         <ServicesMarquee/>
-        <Sectors/>
+        {/* <Sectors/> */}
         <ParallaxHero/>  
-        <Projects />  
+        {/* <Projects />   */}
+        <ProCard/>
         <TechStack/> 
         <Process/> 
         <ContactCTA/> 

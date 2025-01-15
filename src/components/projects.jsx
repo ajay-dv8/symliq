@@ -15,8 +15,7 @@ import {
 import { projects } from "@/constants/projects"
 import { Titles } from "./titles";
 import Card from "./ui/projectCard";
-import Image from "next/image";
-import { HiMiniXMark } from "react-icons/hi2";
+import Image from "next/image"; 
  
 
 export function Projects() {
