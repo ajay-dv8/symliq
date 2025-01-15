@@ -2,8 +2,7 @@
 import { ReactLenis } from 'lenis/react' 
 
 import { ParallaxHero } from "@/components/parallaxHero";  
-import { WhatWeDo } from "@/components/whatWeDo"
-import { Projects } from "@/components/projects"; 
+import { WhatWeDo } from "@/components/whatWeDo" 
 import { Process } from "@/components/process/process";
 import { TechStack } from "@/components/tech";
 import { ContactCTA } from "@/components/CTA-Card";  
@@ -12,8 +11,6 @@ import { ContactIntro } from "@/components/contact-intro";
 import { Footer } from '@/components/footer'; 
 import { WorksCompleted } from '@/components/works-completed';
 import { Testimonials } from '@/components/testimonials'; 
-// import { Sectors } from '@/components/sectors';
-// import { NewHero } from '@/components/newHero'; 
 import { Hero } from '@/components/hero';
 import { ProCard } from '@/components/p-card';
 
@@ -22,14 +19,11 @@ export default function Home() {
  
   return (
     <div className=" ">
-      <ReactLenis root> 
-        {/* <NewHero/>  */}
+      <ReactLenis root>  
         <Hero/>
         <WhatWeDo/> 
-        <ServicesMarquee/>
-        {/* <Sectors/> */}
-        <ParallaxHero/>  
-        {/* <Projects />   */}
+        <ServicesMarquee/> 
+        <ParallaxHero/>   
         <ProCard/>
         <TechStack/> 
         <Process/> 

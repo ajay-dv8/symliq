@@ -17,7 +17,14 @@ export const Footer = () => {
           {/* Logo and Tagline */}
           <div className="~space-y-4/10">
             <div className=" ">
-               <Image src={"/fullLogo.png"} alt="logo" width={350} height={150}/> 
+               <Image 
+                // loading='lazy' 
+                // placeholder='blur' 
+                src={"/fullLogo.png"} 
+                alt="logo" 
+                width={350} 
+                height={150}
+              /> 
             </div>
             <p className="text-base md:text-2xl text-center text-balance md:text-left max-w-md">
             At Symliq, we combine teamwork, innovation, and expertise to deliver high-quality, creative solutions. Our collaborative approach ensures every project exceeds client expectations, bringing your vision to life with excellence.
