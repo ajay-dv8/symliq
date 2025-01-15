@@ -1,6 +1,6 @@
+ 
 'use client'; 
 import { TextGenerateEffect } from "./ui/text-generate-effect"; 
-
  
 import { BackgroundGradientAnimation } from "@/components/ui/bg-grdient-animation";
 import { HiArrowDown } from "react-icons/hi2";
@@ -27,6 +27,4 @@ export function Hero() {
     </BackgroundGradientAnimation>
   );
 }
-
- 
  
