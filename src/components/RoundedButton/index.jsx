@@ -1,10 +1,10 @@
 import React from 'react'
-import { useEffect, useRef } from 'react';
-import styles from './style.module.scss';
+import { useEffect, useRef } from 'react'; 
 import gsap from 'gsap'; 
 import { Magnetic } from '../magnetic';
+import { cn } from '@/lib/utils';
 
-export default function index({children, backgroundColor="#008080", ...attributes}) {
+export default function index({className, children, backgroundColor="#008080", ...attributes}) {
 
   const circle = useRef(null);
   let timeline = useRef(null);
@@ -29,12 +29,23 @@ export default function index({children, backgroundColor="#008080", ...attribute
 
   return (
     <Magnetic>
-      <div className={styles.roundedButton} style={{overflow: "hidden"}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes}>
-          {
-            children
-          }
-        <div ref={circle} style={{backgroundColor}} className={styles.circle}></div>
+      <div 
+        style={{overflow: "hidden"}} 
+        onMouseEnter={() => {manageMouseEnter()}} 
+        onMouseLeave={() => {manageMouseLeave()}} 
+        {...attributes}
+        className={cn("rounded-full cursor-pointer relative flex items-center justify-center p-3 m-6", className)} 
+      >
+          { children }
+        <div 
+          ref={circle} 
+          style={{backgroundColor}} 
+          className="w-full h-[150%] absolute rounded-full top-[100%]"
+        ></div>
       </div>
     </Magnetic>
   )
 }
+
+
+ 

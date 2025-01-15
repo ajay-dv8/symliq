@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import styles from './style.module.scss';
+import React, { useState } from 'react'; 
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { menuSlide } from '../animation';
@@ -22,16 +21,16 @@ export default function Index() {
         initial="initial"
         animate="enter"
         exit="exit"
-        className={styles.menu}
+        className="h-screen w-[90%] bg-[rgb(41,41,41)] fixed right-0 top-0 text-white z-[30] md:w-[50%]"
       >
-        <div className={`${styles.body} z-50`}>
+        <div className="box-border h-full flex flex-col justify-between z-[40] p-[100px] md:p-[40px_32px]">
           <div
             onMouseLeave={() => {
               setSelectedIndicator(pathname);
             }}
-            className={styles.nav}
+            className="flex flex-col text-[56px] gap-[12px] mt-[80px] md:text-[32px] md:mt-[40px]"
           >
-            <div className={styles.header}>
+            <div className="text-[rgb(153,153,153)] border-b border-[rgb(153,153,153)] uppercase text-[11px] mb-[40px] md:mb-[20px]">
               <p>Navigation</p>
             </div>
             {navItems.map((data, index) => (
@@ -41,6 +40,7 @@ export default function Index() {
                 isActive={selectedIndicator === data.href}
                 setSelectedIndicator={setSelectedIndicator}
                 closeMenu={closeMenu} // Pass the closeMenu function
+                className="z-50"
               />
             ))}
           </div>
@@ -53,181 +53,4 @@ export default function Index() {
 }
  
 
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useState } from 'react'
-// import styles from './style.module.scss';
-// import { motion } from 'framer-motion';
-// import { usePathname, useRouter } from 'next/navigation';
-// import { menuSlide } from '../animation';
-// import Link from './Link';
-// import Curve from './Curve';
-// import Footer from './Footer';
-// import { navItems } from '@/constants/nav-items';
  
-
-// export default function index() {
-
-//   const pathname = usePathname();
-//   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
-//   const [isMenuOpen, setIsMenuOpen] = useState(true); // State to control navbar visibility
-
-//   const closeMenu = () => setIsMenuOpen(false); // Function to close the menu
-  
-//   return (
-//     isMenuOpen && ( // Render navbar only if it's open
-//     <motion.div 
-//       variants={menuSlide} 
-//       initial="initial" 
-//       animate="enter" 
-//       exit="exit" 
-//       className={styles.menu}
-//       >
-//        <div className={`${styles.body} z-50`}>
-//           <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
-//             <div className={styles.header}>
-//               <p>Navigation</p>
-//             </div>
-
-//             { navItems.map( (data, index) => { 
-//                 return <Link 
-//                 key={index} 
-//                 data={{...data, index}} 
-//                 isActive={selectedIndicator == data.href} 
-//                 setSelectedIndicator={setSelectedIndicator}>
-//                 </Link>
-//               }) }
-
-//           </div>
-//           <Footer />
-//         </div>
-//         <Curve />
-//     </motion.div>
-//   )
-// )
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // import React, { useState, useEffect } from "react";
-// // import styles from "./style.module.scss";
-// // import { motion } from "framer-motion";
-// // import { usePathname, useRouter } from "next/navigation";
-// // import { menuSlide } from "../animation";
-// // import Curve from "./Curve";
-// // import Footer from "./Footer";
-
-// // const navItems = [
-// //   {
-// //     title: "About",
-// //     href: "#about", // Updated to use section IDs
-// //   },
-// //   {
-// //     title: "Services",
-// //     href: "#services", // Updated to use section IDs
-// //   },
-// //   {
-// //     title: "Case Study",
-// //     href: "#case-study", // Updated to use section IDs
-// //   },
-// //   {
-// //     title: "Contact",
-// //     href: "#contact", // Updated to use section IDs
-// //   },
-// // ];
-
-// // export default function Index() {
-// //   const pathname = usePathname();
-// //   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
-// //   const router = useRouter();
-
-// //   // Smooth scroll handler
-// //   const handleSmoothScroll = (id) => {
-// //     const section = document.getElementById(id);
-// //     if (section) {
-// //       section.scrollIntoView({ behavior: "smooth" }); // Smooth scrolling
-// //     }
-// //   };
-
-// //   useEffect(() => {
-// //     const hash = router.asPath.split("#")[1]; // Extract the hash from the URL
-// //     if (hash) {
-// //       handleSmoothScroll(hash); // Scroll to the section on page load
-// //     }
-// //   }, [router.asPath]);
-
-// //   return (
-// //     <motion.div
-// //       variants={menuSlide}
-// //       initial="initial"
-// //       animate="enter"
-// //       exit="exit"
-// //       className={styles.menu}
-// //     >
-// //       <div className={`${styles.body} z-50`}>
-// //         <div
-// //           onMouseLeave={() => {
-// //             setSelectedIndicator(pathname);
-// //           }}
-// //           className={styles.nav}
-// //         >
-// //           <div className={styles.header}>
-// //             <p>Navigation</p>
-// //           </div>
-// //           {navItems.map((data, index) => (
-// //             <a
-// //               key={index}
-// //               href={data.href}
-// //               onClick={(e) => {
-// //                 e.preventDefault();
-// //                 handleSmoothScroll(data.href.slice(1)); // Remove "#" and pass ID
-// //                 setSelectedIndicator(data.href); // Update selected indicator
-// //               }}
-// //               className={`${styles.link} ${
-// //                 selectedIndicator === data.href ? styles.active : ""
-// //               }`}
-// //             >
-// //               {data.title}
-// //             </a>
-// //           ))}
-// //         </div>
-// //         <Footer />
-// //       </div>
-// //       <Curve />
-// //     </motion.div>
-// //   );
-// // }
-
-

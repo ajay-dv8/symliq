@@ -36,7 +36,7 @@ export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className
   
   return (
     <div className='mt-28 pt-10 '>
-      <h4 className={cn("text-lg text-center font-semibold text-colorDark/50 my-10", smallClassName)}>
+      <h4 className={cn("text-lg text-center font-normal text-colorDark/60 my-10", smallClassName)}>
         {smallTitle}
       </h4>
 
@@ -49,7 +49,7 @@ export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className
       > 
         <motion.h1 
           variants={itemVariants}
-          className={cn("text-center text-colorDark ~text-3xl/7xl font-semibold", className)}>
+          className={cn("text-center text-colorDark ~text-3xl/7xl font-normal", className)}>
         {bigTitle}
         </motion.h1> 
 
@@ -62,12 +62,12 @@ export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className
       >
         <motion.p 
           variants={itemVariants}
-          className={('text-colorDark/60 ~text-base/lg font-normal md:font-semibold', subClassName)}>
+          className={('text-colorDark/60 ~text-base/lg font-normal md:font-normal', subClassName)}>
           {subLineOne}
         </motion.p>
         <motion.p 
           variants={itemVariants}
-          className={('text-colorDark/60 ~text-base/lg font-normal md:font-semibold', subClassName)}>
+          className={('text-colorDark/60 ~text-base/lg font-normal md:font-normal', subClassName)}>
           {subLineTwo}
         </motion.p>
       </motion.div>

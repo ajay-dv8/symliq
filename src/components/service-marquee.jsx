@@ -46,7 +46,7 @@ export function ServicesMarquee() {
     >
       <motion.p 
         variants={itemVariants}
-        className="text-colorDark/50 text-center text-lg font-semibold ~my-1/10"
+        className="text-colorDark/60 text-center text-xl font-normal ~my-1/10"
       >
         Our Services
       </motion.p> 

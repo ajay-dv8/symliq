@@ -47,7 +47,7 @@ export const WhatWeDo = () => {
   return (
     <div id="about" className="w-full bg-colorLight text-colorDark p-10 ~mt-10/40" >
     
-      <p className="font-bold text-colorDark/50 text-center text-xl mb-16">
+      <p className="font-normal text-colorDark/50 text-center text-xl mb-16">
         What We Do
       </p>
   
@@ -67,19 +67,19 @@ export const WhatWeDo = () => {
       >
         <motion.p 
           variants={itemVariants} 
-          className="text-center text-base block md:hidden text-colorDark/70"
+          className="text-center text-base block font-normal md:hidden text-colorDark/70"
         >
           We craft cutting-edge digital products that blend stunning design, seamless development, and the power of the latest technology!
         </motion.p>
         <motion.p 
           variants={itemVariants} 
-          className="text-center text-xl font-semibold hidden md:block text-colorDark/70"
+          className="text-center text-xl font-normal hidden md:block text-colorDark/70"
         >
           We craft cutting-edge digital products that blend stunning design,
         </motion.p>
         <motion.p 
           variants={itemVariants}
-          className="text-center text-xl font-semibold hidden md:block text-colorDark/70"
+          className="text-center text-xl font-normal hidden md:block text-colorDark/70"
         >
           seamless development, and the power of the latest technology!
         </motion.p>
