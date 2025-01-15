@@ -40,7 +40,7 @@ export default function Home() {
         <div className='relative h-[720px] md:h-[500px] bottom-0 '
           style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
         > 
-          <div className='relative h-[calc(100vh+960px)] md:h-[calc(100vh+500px)] -top-[100vh]'> 
+          <div className='relative h-[calc(100vh+720px)] md:h-[calc(100vh+500px)] -top-[100vh]'> 
             <div className='h-[720px] md:h-[500px] sticky top-[calc(100vh-720px)] md:top-[calc(100vh-500px)]'> 
               <Footer />
             </div> 
