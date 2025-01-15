@@ -20,7 +20,7 @@ export const ContactPage = () => {
           <span className='text-colorDark font-bold transition-all ease-in-out duration-700 hover:text-teal text-lg'>
             Call line 
           </span>
-          <a href='tel:+233550414170' id='call_btn'>CALL</a>
+          <a href='tel:+233248574526' id='call_btn'>CALL</a>
         </div>
 
         <div className='relative bottom-[-5rem] flex flex-col items-center font-semibold'>
