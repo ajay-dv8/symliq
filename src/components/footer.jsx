@@ -32,24 +32,24 @@ export const Footer = () => {
           {/* Navigation Links */}
           <nav className="flex flex-col text-center items-center md:items-start md:flex-row space-y-2 md:space-y-0 md:space-x-12">
             <div className="space-y-2 md:space-y-8">
-              <Link href="/branding" className="block hover:text-white transition-colors">
+              <Link href="/" className="block hover:text-white transition-colors">
                 Home
               </Link>
-              <Link href="/realisations" className="block hover:text-white transition-colors">
+              <Link href="#work" className="block hover:text-white transition-colors">
                 Cases
               </Link>
-              <Link href="/site-web" className="block hover:text-white transition-colors">
+              <Link href="#about" className="block hover:text-white transition-colors">
                 About
               </Link>
             </div>
             <div className="space-y-2 md:space-y-8">
-              <Link href="/ressources" className="block hover:text-white transition-colors">
+              <Link href="#services" className="block hover:text-white transition-colors">
                 Services
               </Link>
-              <Link href="/campagne" className="block hover:text-white transition-colors">
+              <Link href="#testimonials" className="block hover:text-white transition-colors">
                 Testimonials
               </Link>
-              <Link href="/contact" className="block hover:text-white transition-colors">
+              <Link href="#contact" className="block hover:text-white transition-colors">
                 Contact
               </Link>
             </div>
