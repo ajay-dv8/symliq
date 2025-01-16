@@ -7,10 +7,11 @@ export function ParallaxHero() {
 }
 export const products = [
   {
-    title: "Moonbeam", 
+    title: "eCommerce ", 
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "/services/ecommerce.webp",
   },
+ 
   {
     title: "Web Development", 
     thumbnail:
@@ -25,17 +26,17 @@ export const products = [
   {
     title: "Editorially", 
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
   },
   {
-    title: "Editrix AI", 
+    title: "Organizational ", 
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      "/services/ind3.webp",
   },
   {
     title: "Pixel Perfect", 
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
   },
 
   {
@@ -43,31 +44,33 @@ export const products = [
     thumbnail:
       "/services/des.webp",
   },
+  
   {
-    title: "eCommerce ", 
+    title: "Mobile", 
     thumbnail:
-      "/services/ecommerce.webp",
+      "/services/mob.webp",
   },
+
   {
-    title: "Tailwind Master Kit", 
+    title: "Web Design", 
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      "/services/wdes.webp",
   },
   {
     title: "SmartBridge", 
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+      "/services/ind.webp",
   },
   {
-    title: "Renderwork Studio", 
+    title: "Industrial", 
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+      "/services/ind.webp",
   },
 
   {
-    title: "Creme Digital", 
+    title: "Sales", 
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      "/services/ecom.webp",
   },
   {
     title: "UI/UX", 
