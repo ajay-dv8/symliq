@@ -1,6 +1,7 @@
 "use client" 
 import { cn } from "@/lib/utils" 
 import { motion, useInView } from "framer-motion"
+import Link from "next/link";
 import { useRef } from "react";
 import { HiLink } from "react-icons/hi2";
 
@@ -8,7 +9,8 @@ export const ProContentCard = ({
   className,
   backgroundImage, 
   title,
-  description
+  description,
+  // link
 } ) => {
 
   const imageContainerRef = useRef(null);
@@ -48,6 +50,7 @@ export const ProContentCard = ({
       variants={containerVariants}
       className=" w-full group/card"
     >
+      {/* <Link href={link} alt='link'> */}
       <motion.div
         variants={itemVariants}
         className={cn(
@@ -58,25 +61,34 @@ export const ProContentCard = ({
       >
         <div className="absolute w-[calc(100%+1rem)] h-full bottom-0 left-0 right-0 transition duration-300 group-hover/card:bg-black opacity-60" />
 
-        <div className="hidden group-hover/card:flex mt-[30%] relative w-[calc(100%+1rem)] flex-row justify-center ~gap-2/4 items-center z-10">
-          <HiLink className="text-xl text-white"/>
-          <p className="">Visit {" "} {title} </p>
+        <div className="hidden group-hover/card:flex mt-[30%] relative w-[calc(100%+1rem)] flex-col justify-center ~gap-2/4 items-center z-10">
+          <div className="flex items-center gap-x-3">
+            <HiLink className="text-lg text-white"/>
+            <p className="">Visit {" "} {title} </p> 
+          </div>
+
+          <div className="relative bottom-0 ~px-2/4"> 
+            <p className="font-normal text-sm text-gray-50 text-center relative z-10 my-2 md:my-4">
+              {description}
+            </p>
+          </div>
         </div>
 
-        <div className="text absolute content bottom-0 bg-black opacity-60 w-[calc(100%+1rem)] mx-0 ~px-2/5 ~pt-1/2">
+        <div className="text absolute content bottom-0 bg-black opacity-40 w-[calc(100%+1rem)] mx-0 ~px-2/5 ~pt-1/2">
 
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between md:justify-center items-center">
           <h1 className="font-bold text-lg md:text-2xl text-gray-50 relative z-10">
             {title}
           </h1>
 
           <HiLink className="text-xl text-white mr-2 md:hidden"/>
         </div>
-          <p className="font-normal text-sm text-gray-50 relative z-10 my-2 md:my-4">
+          {/* <p className="font-normal text-sm text-gray-50 relative z-10 my-2 md:my-4">
             {description}
-          </p>
+          </p> */}
         </div>
       </motion.div>
+      {/* </Link> */}
     </motion.div>
   )
 }

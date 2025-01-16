@@ -19,11 +19,18 @@ export function ProCard() {
  
     <div className="grid md:grid-cols-2 gap-12 md:gap-20 ~mx-8/20">
       {projects.map((project, index) => (
-        <Link href={project.link} key={index} className="hover:scale-105 transition-all ease-in-out duration-700 rounded-lg">
+        <Link 
+          key={index} 
+          href={project.link} 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:scale-105 transition-all ease-in-out duration-700 rounded-lg"
+        >
           <ProContentCard
             backgroundImage={project.backgroundImage} 
             title={project.name} 
             description={project.desc} 
+            // link={project.link}
           />
         </Link>
       ))}
