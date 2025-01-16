@@ -35,8 +35,21 @@ export default {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
+
+        logoZoom: "logoZoom 2s ease-in-out forwards",
+        fadeInOut: "fadeInOut 3s ease-in-out forwards",
       },
       keyframes: {
+        logoZoom: {
+          "0%": { transform: "scale(0)" },
+          "70%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.2)", opacity: 0 },
+        },
+        fadeInOut: {
+          "0%": { opacity: 1 },
+          "80%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",

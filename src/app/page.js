@@ -13,6 +13,7 @@ import { WorksCompleted } from '@/components/works-completed';
 import { Testimonials } from '@/components/testimonials'; 
 import { Hero } from '@/components/hero';
 import { ProCard } from '@/components/p-card';
+import Preloader from '@/components/preloader';
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
   return (
     <div className=" ">
       <ReactLenis root>  
+        <Preloader/>
         <Hero/>
         <WhatWeDo/> 
         <ServicesMarquee/> 

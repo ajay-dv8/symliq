@@ -60,7 +60,7 @@ const processData = [
         </p>
         <LazyVideo 
           src="/vid/pr.webm"
-          poster="/images/poster-research.jpg"
+          poster="/posters/des.webp"
         />
       </div>
     ),
@@ -75,7 +75,7 @@ const processData = [
         </p>
         <LazyVideo 
           src="/vid/stra.webm"
-          poster="/images/poster-strategy.jpg"
+          poster="/posters/stra.webp"
         />
       </div>
     ),
@@ -90,7 +90,7 @@ const processData = [
         </p>
         <LazyVideo 
           src="/vid/dev.webm"
-          poster="/images/poster-development.jpg"
+          poster="/posters/dev.webp"
         />
       </div>
     ),
@@ -105,7 +105,7 @@ const processData = [
         </p>
         <LazyVideo 
           src="/vid/vidf.webm"
-          poster="/images/poster-delivery.jpg"
+          poster="/posters/dep.webp"
         />
       </div>
     ),
