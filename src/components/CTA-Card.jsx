@@ -1,9 +1,7 @@
 'use client' 
-
-import React from "react"; 
+ 
 import TypeWriter from "./typewrite";
 import { SwapBtn } from "./swapBtn"; 
-import Link from "next/link";
  
 const examples = [
   "Can you redesign my existing website?",
