@@ -1,9 +1,9 @@
 'use client' 
 import React, { useRef } from 'react'
 import { motion, useInView } from "framer-motion";  
-import { Magnetic } from './../magnetic';
+import { Magnetic } from '../magnetic';
 import { generalInfo } from '@/constants/info';
-import { TiPhone, TiPhoneOutline } from 'react-icons/ti';
+import { TiPhoneOutline } from 'react-icons/ti';
 
 export const Contact = () => {
   const textContainerRef = useRef(null);
@@ -36,18 +36,18 @@ export const Contact = () => {
   };
 
   return (
-    <div id='contact' className=" " >  
+    <div className=" " >  
       <motion.div 
         ref={textContainerRef}
         initial="hidden"
         animate={textIsInView ? "show" : "hidden"}
         variants={containerVariants}
         className="mt-16"
+        id="contact"
       > 
-          <a href={generalInfo.emailLink} className=' '>
+        <a href={generalInfo.emailLink} className=' '>
         <Magnetic>
           <motion.h1 
-            id='contact'
             ref={textRef}
             variants={itemVariants}
             className="text-4xl md:text-9xl mt-8 text-colorLight font-semibold text-center drop-shadow-xl"
@@ -55,10 +55,9 @@ export const Contact = () => {
             info@symliq.com
           </motion.h1>
         </Magnetic>  
-          </a>
+        </a>
       </motion.div>
-
-       {/* <Phone /> */}
+ 
     </div>
   );
 };

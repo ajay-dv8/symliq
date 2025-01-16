@@ -11,10 +11,9 @@ const title = [
   "We Drive Growth And Success", 
 ]
 
-export function Hero() {
-  const words = `We turn ideas into software solutions that drive results.`;
+export function Hero() { 
   return (
-    <div className=" bg-teal">
+    <div id="home" className=" bg-teal">
     <BackgroundGradientAnimation>
       <div className="absolute z-[25] inset-0 flex flex-col items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
         <div className="text-center px-4 md:px-20 text-3xl md:text-6xl leading-2 uppercase">

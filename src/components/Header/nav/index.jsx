@@ -10,12 +10,12 @@ import { navItems } from '@/constants/nav-items';
 export default function Index() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
-  const [isMenuOpen, setIsMenuOpen] = useState(true); // State to control navbar visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(true); 
 
-  const closeMenu = () => setIsMenuOpen(false); // Function to close the menu
+  const closeMenu = () => setIsMenuOpen(false); 
 
   return (
-    isMenuOpen && ( // Render navbar only if it's open
+    isMenuOpen && ( 
       <motion.div
         variants={menuSlide}
         initial="initial"
@@ -39,7 +39,7 @@ export default function Index() {
                 data={{ ...data, index }}
                 isActive={selectedIndicator === data.href}
                 setSelectedIndicator={setSelectedIndicator}
-                closeMenu={closeMenu} // Pass the closeMenu function
+                closeMenu={closeMenu} 
                 className="z-50"
               />
             ))}

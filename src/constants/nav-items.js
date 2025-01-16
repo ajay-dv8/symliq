@@ -23,7 +23,7 @@ export const navItems = [
   },
   {
     title: "Contact",
-    href: "#contact",
+    href: "contact",
     icon: <HiPhone className=" " />
   },
 ]

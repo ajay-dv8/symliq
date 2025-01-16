@@ -12,7 +12,7 @@ export default function Index({ data, isActive, setSelectedIndicator, closeMenu 
       const section = document.getElementById(href.slice(1)); // Get the section by ID
 
       if (section) {
-        const targetPosition = section.offsetTop; // Get the target scroll position
+        const targetPosition = section.offsetTop - 50; // Get the target scroll position
         const startPosition = window.scrollY; // Get current scroll position
         const distance = targetPosition - startPosition; // Calculate the distance to scroll
         const duration = 1500; // Scroll duration in milliseconds
@@ -45,6 +45,7 @@ export default function Index({ data, isActive, setSelectedIndicator, closeMenu 
   };
 
   return (
+    <>
     <motion.div
       className="relative flex items-center"
       onMouseEnter={() => setSelectedIndicator(href)}
@@ -66,6 +67,8 @@ export default function Index({ data, isActive, setSelectedIndicator, closeMenu 
         {title}
       </Link>
     </motion.div>
+      {/* <Link href="#contact" className='text-2xl md:text-7xl mb-8'>Contact2</Link> */}
+    </>
   );
 }
 
