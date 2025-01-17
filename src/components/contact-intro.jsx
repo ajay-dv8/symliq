@@ -1,45 +1,104 @@
-'use client' 
+'use client'; 
 import gsap from "gsap";
-import {ScrollTrigger} from "gsap/all";
+import { ScrollTrigger } from "gsap/all";
 import { Contact } from "./contact-us/contact";
-import React, { useEffect, useRef } from 'react'
-import { motion, useInView } from "framer-motion";  
-import { Magnetic } from "./magnetic";
-import { Titles } from "./titles";
+import React, { useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion"; 
 
-gsap.registerPlugin(ScrollTrigger )
+gsap.registerPlugin(ScrollTrigger);
 
 export const ContactIntro = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, threshold: 0.2 }); // Trigger once when 20% of the element is visible
 
   useEffect(() => { 
-    const clipAnimation = gsap.timeline({
-      scrollTrigger: {
-        trigger: '#clip',
-        start: "center center",
-        end: "+=800 center",
-        scrub: 0.5,
-        pin: true,
-        pinSpacing: true,
-      }
-    })
-    clipAnimation.to('.mask-clip-path', {
-      width: '100vw',
-      height: "100vh",
-      borderRadius: 0
-    }) 
-  }, [])
- 
-  return (  
-    <div className=" w-screen min-h-screen contact-intro-fade-in">
-      <div id="clip" className="h-dvh w-screen ">
-        <div className="mask-clip-path about-image bg-teal/80"> 
-            <ContactTitle/>  
-            <Contact/> 
+    if (inView) {
+      const clipAnimation = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#clip',
+          start: "center center",
+          end: "+=800 center",
+          scrub: 0.5,
+          pin: true,
+          pinSpacing: true,
+        },
+      });
+      clipAnimation.to('.mask-clip-path', {
+        width: '100vw',
+        height: "100vh",
+        borderRadius: 0,
+      });
+    }
+  }, [inView]);
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }} // Initial hidden state
+      animate={inView ? { opacity: 1, y: 0 } : {}} // Animate when in view
+      transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
+      className="w-screen min-h-screen contact-intro-fade-in"
+    >
+      <div id="clip" className="h-dvh w-screen">
+        <div className="mask-clip-path about-image bg-teal/80">
+          <ContactTitle />
+          <Contact />
         </div>
       </div>
-    </div>  
-  )
-}
+    </motion.div>
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
+// 'use client' 
+// import gsap from "gsap";
+// import {ScrollTrigger} from "gsap/all";
+// import { Contact } from "./contact-us/contact";
+// import React, { useEffect, useRef } from 'react'
+// import { motion, useInView } from "framer-motion"; 
+
+// gsap.registerPlugin(ScrollTrigger )
+
+// export const ContactIntro = () => {
+
+//   useEffect(() => { 
+//     const clipAnimation = gsap.timeline({
+//       scrollTrigger: {
+//         trigger: '#clip',
+//         start: "center center",
+//         end: "+=800 center",
+//         scrub: 0.5,
+//         pin: true,
+//         pinSpacing: true,
+//       }
+//     })
+//     clipAnimation.to('.mask-clip-path', {
+//       width: '100vw',
+//       height: "100vh",
+//       borderRadius: 0
+//     }) 
+//   }, [])
+ 
+//   return (  
+//     <div className=" w-screen min-h-screen contact-intro-fade-in">
+//       <div id="clip" className="h-dvh w-screen ">
+//         <div className="mask-clip-path about-image bg-teal/80"> 
+//             <ContactTitle/>  
+//             <Contact/> 
+//         </div>
+//       </div>
+//     </div>  
+//   )
+// }
 
 
 
