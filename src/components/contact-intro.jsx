@@ -49,58 +49,7 @@ export const ContactIntro = () => {
   );
 };
 
-
-
-
-
-
-
-
-
-
-
-// 'use client' 
-// import gsap from "gsap";
-// import {ScrollTrigger} from "gsap/all";
-// import { Contact } from "./contact-us/contact";
-// import React, { useEffect, useRef } from 'react'
-// import { motion, useInView } from "framer-motion"; 
-
-// gsap.registerPlugin(ScrollTrigger )
-
-// export const ContactIntro = () => {
-
-//   useEffect(() => { 
-//     const clipAnimation = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: '#clip',
-//         start: "center center",
-//         end: "+=800 center",
-//         scrub: 0.5,
-//         pin: true,
-//         pinSpacing: true,
-//       }
-//     })
-//     clipAnimation.to('.mask-clip-path', {
-//       width: '100vw',
-//       height: "100vh",
-//       borderRadius: 0
-//     }) 
-//   }, [])
  
-//   return (  
-//     <div className=" w-screen min-h-screen contact-intro-fade-in">
-//       <div id="clip" className="h-dvh w-screen ">
-//         <div className="mask-clip-path about-image bg-teal/80"> 
-//             <ContactTitle/>  
-//             <Contact/> 
-//         </div>
-//       </div>
-//     </div>  
-//   )
-// }
-
-
 
 export const ContactTitle = () => {
  
