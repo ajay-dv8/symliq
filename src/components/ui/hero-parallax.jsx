@@ -77,6 +77,16 @@ export const ProductCard = ({
   product,
   translate
 }) => {
+
+    // Generate a base64 placeholder for low-quality effect
+    const generateBlurPlaceholder = () => {
+      return `data:image/svg+xml;base64,${btoa(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#ccc">
+          <rect width="100%" height="100%" />
+        </svg>
+      `)}`;
+    };
+
   return (
     (<motion.div
       style={{
@@ -93,7 +103,11 @@ export const ProductCard = ({
           height="600"
           width="600"
           className="object-cover object-left-top absolute h-full w-full inset-0"
-          alt={product.title} />
+          alt={product.title} 
+          loading="lazy"
+          placeholder="blur" 
+          blurDataURL={generateBlurPlaceholder()}
+        />
       </div>
       <div
         className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>

@@ -64,7 +64,7 @@ class TypeWriter extends React.PureComponent {
   render() {
     const { className } = this.props;
 
-    return <p className={cn("inline-block text-colorDark", className)}>{this.state.text} </p>;
+    return <p className={cn("inline-block text-colorDark", className)}>{this.state.text}.</p>;
   }
 }
 
