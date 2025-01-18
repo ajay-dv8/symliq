@@ -8,6 +8,8 @@ import {
 import { projects } from "@/constants/projects";
 import { Titles } from "./titles";
 import Link from "next/link";
+import "./h-scroll.css"
+
 
 export default function HorizontalPro() {
   const sectionRef = useRef(null);
@@ -104,7 +106,7 @@ export default function HorizontalPro() {
         <div className="flex flex-col">
           <div
             ref={containerRef}
-            className="flex overflow-x-scroll no-scrollbar cursor-grab snap-x snap-mandatory"
+            className="flex overflow-x-auto no-scrollbar cursor-grab snap-x snap-mandatory"
             style={{ scrollBehavior: "smooth" }}
           >
             <div className="flex ~gap-6/14 px-8 min-w-max my-4">
@@ -115,10 +117,10 @@ export default function HorizontalPro() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-[80vw] md:w-[700px] snap-start flex-shrink-0 rounded-lg hover:scale-105 transition-transform ease-in-out duration-700 cursor-pointer group"
-                  onClick={(e) => {
-                    e.preventDefault(); // Prevent default navigation on card click
-                    scrollToCard(index); // Center the card
-                  }}
+                  // onClick={(e) => {
+                  //   e.preventDefault(); // Prevent default navigation on card click
+                  //   scrollToCard(index); // Center the card
+                  // }}
                 >
                   {/* Card container */}
                   <div
@@ -131,12 +133,12 @@ export default function HorizontalPro() {
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300 pointer-events-none w-[calc(100%+1rem)]" />
 
                     {/* Hover Text */}
-                    <Link href={project.link} className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 ~py-1/2 ~px-2/4">
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 ~py-1/2 ~px-2/4">
                       <h4 className="text-lg font-normal text-white text-center px-4 flex items-center">
                         Visit {project.name}{" "}
                         <HiMiniArrowTopRightOnSquare className="text-lg text-colorLight ml-2" />
                       </h4>
-                    </Link>
+                    </div>
 
                     {/* Card Content */}
                     <div className="absolute hidden md:block bottom-4 left-4 z-10 text-white">
