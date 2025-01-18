@@ -57,6 +57,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-snap-align {
+  scroll-snap-align: start;
+}
+
+
 .contact-intro-fade-in {
   opacity: 0;
   animation: conIntroFadeIn 1s ease-in forwards;

@@ -14,6 +14,7 @@ import { Testimonials } from '@/components/testimonials';
 import { Hero } from '@/components/hero';
 import { ProCard } from '@/components/p-card';
 import Preloader from '@/components/preloader';
+import HorizontalPro from '@/components/projects';
 
 
 export default function Home() {
@@ -25,8 +26,9 @@ export default function Home() {
         <Hero/>
         <WhatWeDo/> 
         <ServicesMarquee/> 
-        <ParallaxHero/>   
-        <ProCard/>
+        <ParallaxHero/> 
+        <HorizontalPro/> 
+        {/* <ProCard/> */}
         <TechStack/> 
         <Process/> 
         <ContactCTA/> 

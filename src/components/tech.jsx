@@ -36,9 +36,9 @@ export function TechStack() {
   };
 
   return (
-    <>
+    <div className="mb-48">
     <motion.div
-      className="w-full px-8"
+      className="w-full px-16"
       ref={textContainerRef} 
       initial="hidden"
       animate={textIsInView ? "show" : "hidden"}
@@ -62,7 +62,7 @@ export function TechStack() {
         <InfiniteMovingCards type="image" items={stackTwo} direction="right" speed="fast" />
       </div> 
     
-    </>
+    </div>
   );
 }
 

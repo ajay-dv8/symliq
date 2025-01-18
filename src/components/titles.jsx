@@ -35,7 +35,7 @@ export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className
   };
   
   return (
-    <div className='mt-28 pt-10 '>
+    <div className=' '>
       <h4 className={cn("text-lg text-center font-normal text-colorDark/60 my-10", smallClassName)}>
         {smallTitle}
       </h4>
