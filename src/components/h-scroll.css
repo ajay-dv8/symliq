@@ -1,15 +1,13 @@
 /* Horizontal scrollbar */
 ::-webkit-scrollbar {
-  height: 2px;  /* Change height to control horizontal scrollbar size */
+  height: 0; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: transparent; /* Change the color of the horizontal scrollbar thumb */
-  border-radius: 10px;
+  background: transparent; 
+  background: #008080;
 }
-
-/* Optional: Customize scrollbar track (background) */
+ 
 ::-webkit-scrollbar-track {
-  background: #eeeeee; /* Color for the track (background) */
-  /* border-radius: 10px; */
+  background: #eeeeee; 
 }
