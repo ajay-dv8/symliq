@@ -11,8 +11,7 @@ import { ContactIntro } from "@/components/contact-intro";
 import { Footer } from '@/components/footer'; 
 import { WorksCompleted } from '@/components/works-completed';
 import { Testimonials } from '@/components/testimonials'; 
-import { Hero } from '@/components/hero';
-import { ProCard } from '@/components/p-card';
+import { Hero } from '@/components/hero'; 
 import Preloader from '@/components/preloader';
 import HorizontalPro from '@/components/projects';
 
@@ -28,7 +27,6 @@ export default function Home() {
         <ServicesMarquee/> 
         <ParallaxHero/> 
         <HorizontalPro/> 
-        {/* <ProCard/> */}
         <TechStack/> 
         <Process/> 
         <ContactCTA/> 
