@@ -47,4 +47,7 @@ export default function Home() {
   );
 }
 
- 
+//  Images from freepik.com
+//  Icons from heroicons 
+//  Fonts from google fonts
+//  mockup was made with canva 
