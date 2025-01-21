@@ -4,8 +4,9 @@
 
 :root {
   --background: #eee;
-  --foreground: #161616;
-  font-family: 'Montserrat', sans-serif;
+  --foreground: #161616;  
+  --font-intertight: "Inter Tight", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 * {
@@ -54,7 +55,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-inter);
 }
 
 .scroll-snap-x {

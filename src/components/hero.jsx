@@ -20,7 +20,7 @@ export function Hero() {
  
           <TypeWriter 
             data={title}
-            className="~text-3xl/5xl text-colorLight drop-shadow-lg font-normal"
+            className="~text-3xl/5xl text-colorLight drop-shadow-lg font-intertight font-normal"
           />
         </div>
 

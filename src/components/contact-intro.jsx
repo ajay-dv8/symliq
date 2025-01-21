@@ -98,7 +98,7 @@ const itemVariants = {
   > 
     <motion.h1 
       variants={itemVariants}
-      className="text-center text-colorLight ~text-3xl/7xl font-semibold">
+      className="text-center text-colorLight ~text-3xl/7xl font-intertight font-semibold">
       Let's Work Together
     </motion.h1> 
 

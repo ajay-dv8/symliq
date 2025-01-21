@@ -1,7 +1,7 @@
 import fluid, { extract, screens, fontSize } from 'fluid-tailwind'
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 const svgToDataUri = require("mini-svg-data-uri");
-
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -19,7 +19,8 @@ export default {
 
     extend: {
       fontFamily: {
-        montserrat: ['var(--font-montserrat)', 'sans-serif'], 
+        intertight: ["var(--font-intertight)", ...fontFamily.sans],
+        inter: ["var(--font-inter)", ...fontFamily.sans],
       },
       screens: {
         xs: '20rem'

@@ -49,7 +49,7 @@ export const Titles = ({ smallTitle, bigTitle, subLineOne, subLineTwo, className
       > 
         <motion.h1 
           variants={itemVariants}
-          className={cn("text-center text-colorDark ~text-3xl/7xl font-normal", className)}>
+          className={cn("text-center text-colorDark ~text-3xl/7xl font-intertight font-normal", className)}>
         {bigTitle}
         </motion.h1> 
 

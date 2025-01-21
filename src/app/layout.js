@@ -1,12 +1,19 @@
-import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css"; 
-import { Cursor } from "@/components/ui/cursor";
 import Header from '@/components/Header'
   
-const montserrat = Montserrat({
-  subsets: ['latin'], 
-  weight: ['200', '400', '700'],  
-  variable: '--font-montserrat',  
+const interTight = Inter({
+  subsets: ["latin"],
+  variable: "--font-intertight",
+  display: "swap", // Optimize rendering
+  weight: ["700", "800"], // Specify weights for titles
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  weight: ["400", "500"], // Specify weights for body text
 });
 
 export const metadata = {
@@ -18,9 +25,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en"> 
       <body
-        className={`${montserrat.variable} antialiased overflow-x-hidden bg-colorLight`}
-      >
-        <Cursor/> 
+        className={`${inter.variable} ${interTight.variable} antialiased overflow-x-hidden bg-colorLight`}
+      > 
         <Header/>
         {children}
       </body>
