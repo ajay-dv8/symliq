@@ -22,12 +22,15 @@ export const HeroParallax = ({
   const rotateX = useSpring(useTransform(scrollYProgress, [0, 0.2], [15, 0]), springConfig);
   const opacity = useSpring(useTransform(scrollYProgress, [0, 0.2], [0.2, 1]), springConfig);
   const rotateZ = useSpring(useTransform(scrollYProgress, [0, 0.2], [20, 0]), springConfig);
-  const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [-700, 500]), springConfig);
+
+  // changed from [0, 0.2], [-700, 500] to [0, 0.2], [-300, 100] to reduce gp between header and images when scrolling
+  const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [-300, 100]), springConfig);
+  // const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [-700, 500]), springConfig);
   return (
     (<div
       ref={ref}
       // TODO: h-[300dvh]
-      className="~h-[100rem]/[160rem] bg-foreground mb-48 ~pt-28/40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="~h-[65rem]/[120rem] bg-foreground mb-48  pt-10 md:pt-0 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -79,9 +82,30 @@ export const ProductCard = ({
 }) => {
 
     // Generate a base64 placeholder for low-quality effect
+    // const generateBlurPlaceholder = () => {
+    //   return `data:image/svg+xml;base64,${btoa(`
+    //     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#ccc">
+    //       <rect width="100%" height="100%" />
+    //     </svg>
+    //   `)}`;
+    // };
+
     const generateBlurPlaceholder = () => {
       return `data:image/svg+xml;base64,${btoa(`
         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#ccc">
+          <style>
+            rect {
+              animation: pulse 1.5s infinite ease-in-out;
+            }
+            @keyframes pulse {
+              0%, 100% {
+                opacity: 0.5;
+              }
+              50% {
+                opacity: 1;
+              }
+            }
+          </style>
           <rect width="100%" height="100%" />
         </svg>
       `)}`;

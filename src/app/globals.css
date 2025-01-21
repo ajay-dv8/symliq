@@ -29,8 +29,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #008080;
-  border-radius: 5px;
-  mix-blend-mode: difference;
+  border-radius: 5px; 
 }
 
 /* Handle on hover */ 
@@ -42,6 +41,17 @@
   transition: all;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hide Scrollbar Thumb on Mobile Devices */
+@media (max-width: 767px) {
+  ::-webkit-scrollbar-thumb {
+    display: none;  
+  }
+
+  ::-webkit-scrollbar {
+    width: 0; 
+  }
 }
 
 @media (prefers-color-scheme: dark) {

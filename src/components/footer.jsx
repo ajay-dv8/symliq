@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { MouseHighlight } from './ui/mouse-highlight' 
 import { generalInfo } from '@/constants/info';
 
-const quickLinks = ["Home", "About", "Services", "Products", "Case study", "Contact" ];
+// const quickLinks = ["Home", "About", "Services", "Products", "Case study", "Contact" ];
 
 export const Footer = () => {
   return (
@@ -90,7 +90,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-zinc-500 mt-10 text-zinc-400 text-center pt-3">
+        <div className="border-t border-zinc-500 pb-4 mt-10 text-zinc-400 text-center pt-3">
         Copyright ©2024 All rights reserved Symliq
       </div>
       </MouseHighlight>

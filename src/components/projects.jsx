@@ -107,7 +107,7 @@ export default function HorizontalPro() {
                   style={{
                     backgroundImage: `url(${project.backgroundImage})`,
                   }}
-                  className="aspect-[16/10] bg-cover bg-center overflow-hidden shadow-lg flex flex-col justify-between border-2 border-teal/30 rounded-lg relative"
+                  className="aspect-[16/10] bg-cover bg-center overflow-hidden shadow-lg flex flex-col justify-between border-2 border-teal/20 rounded-lg relative"
                 >
                   {/* filter overlay */}
                   <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300 pointer-events-none w-[calc(100%+1rem)]" />

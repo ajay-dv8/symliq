@@ -39,7 +39,7 @@ class TypeWriter extends React.PureComponent {
       newText = fullTxt.substring(0, this.state.text.length + 1);
     }
 
-    let delta = 200 - Math.random() * 100; // Typing speed
+    let delta = 200 - Math.random() * 250; // Typing speed
 
     if (this.isDeleting) {
       delta /= 2; // Faster when deleting

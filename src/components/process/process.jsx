@@ -34,7 +34,7 @@ const LazyVideo = ({ src, poster }) => {
     <div className="relative w-full pb-[56.25%] bg-black rounded-2xl">
       <video
         ref={videoRef}
-        className="absolute top-0 left-0 w-full h-full rounded-2xl object-cover"
+        className="absolute top-0 left-0 w-full h-full rounded-lg object-cover"
         poster={poster}
         autoPlay
         loop
