@@ -77,7 +77,7 @@ export default function HorizontalPro() {
   };
  
   return (
-    <section className="min-h-[100vh] relative ~pl-4/20">
+    <section id="work" className="min-h-[100vh] relative ~pl-4/20">
       <div className="mb-12">
         <Titles
           smallTitle="Case Study"
