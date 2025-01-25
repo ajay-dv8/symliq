@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['aceternity.com', 'assets.aceternity.com'],
+    remotePatterns: [{
+      protocol: "https",
+      hostname: 'aceternity.com',
+    }],
     formats: ['image/avif', 'image/webp'],
   },
   

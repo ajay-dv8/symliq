@@ -26,6 +26,10 @@ export default {
         xs: '20rem'
       },
       animation: {
+        // for new hero
+        spotlight: "spotlight 2s ease .75s 1 forwards",
+
+
         slowPulse: "pulse 3s infinite", 
         shimmer: "shimmer 2s linear infinite",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
@@ -41,6 +45,19 @@ export default {
         fadeInOut: "fadeInOut 3s ease-in-out forwards",
       },
       keyframes: {
+        // for new hero
+        spotlight: {
+          "0%": {
+            opacity: 0,
+            transform: "translate(-72%, -62%) scale(0.5)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate(-50%,-40%) scale(1)",
+          },
+        },
+
+
         logoZoom: {
           "0%": { transform: "scale(0)" },
           "70%": { transform: "scale(1)" },

@@ -11,18 +11,16 @@ import { ContactIntro } from "@/components/contact-intro";
 import { Footer } from '@/components/footer'; 
 import { WorksCompleted } from '@/components/works-completed';
 import { Testimonials } from '@/components/testimonials'; 
-import { Hero } from '@/components/hero'; 
-import Preloader from '@/components/preloader';
-import HorizontalPro from '@/components/projects';
+import { Hero } from '@/components/hero';  
+import HorizontalPro from '@/components/projects'; 
 
 
 export default function Home() {
  
   return (
     <div className=" ">
-      <ReactLenis root>  
-        <Preloader/>
-        <Hero/>
+      <ReactLenis root> 
+        <Hero/> 
         <WhatWeDo/> 
         <ServicesMarquee/> 
         <ParallaxHero/> 
