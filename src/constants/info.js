@@ -29,6 +29,7 @@ export const generalInfo = {
   phoneLineTwoLink: "tel:+233548050137",
   phoneLineOne: "+233 24 857 4526",
   phoneLineTwo: "+233 54 805 0137",
+  addressLink: (address) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`,
 
   phoneLink: (phone) => `tel:${phone}`,
   address: {
