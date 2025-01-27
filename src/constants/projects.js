@@ -53,7 +53,7 @@ export const projects = [
 },
 {
   id: 6, 
-  link: "",
+  link: "https://www.firedns.io/",
   backgroundImage: '/works/fdnslap.webp',
   name: 'FireDNS', 
   type: 'Health', 
