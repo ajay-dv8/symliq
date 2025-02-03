@@ -43,33 +43,33 @@ export const WorksCompleted = () => {
       <Magnetic>
       <motion.div 
         variants={itemVariants}
-        className="border-x-2 flex items-center border-gradient-to-br from-indigo-300 to-violet-300 rounded-full ~py-3/5 px-10"
+        className="border-x-2 flex text-colorLight items-center border-gradient-to-br from-indigo-300 to-violet-300 rounded-full ~py-3/5 px-10"
       >
-        <h2 className='~text-4xl/6xl font-semibold text-gradient-to-br from-indigo-300 to-violet-300'> 75+ </h2>
+        <h2 className='~text-4xl/6xl text-colorLight font-semibold text-gradient-to-br from-indigo-300 to-violet-300'> 75+ </h2>
         <div className='border-r-2 w-[1px] mx-4 h-[60%]'/>
-        <h3 className='~text-xl/3xl text-gradient-to-br from-indigo-300 to-violet-300 '>Projects <br/>Completed</h3>
+        <h3 className='~text-xl/3xl text-colorLight text-gradient-to-br from-indigo-300 to-violet-300 '>Projects <br/>Completed</h3>
       </motion.div>
       </Magnetic>
 
       <Magnetic>
       <motion.div 
         variants={itemVariants}
-        className="border-x-2 flex items-center border-gradient-to-br from-indigo-300 to-violet-300 rounded-full ~py-3/5 px-10"
+        className="border-x-2 flex text-colorLight items-center border-gradient-to-br from-indigo-300 to-violet-300 rounded-full ~py-3/5 px-10"
       >
-        <h2 className='~text-4xl/6xl font-semibold text-gradient-to-br from-indigo-300 to-violet-300'>30+</h2>
+        <h2 className='~text-4xl/6xl text-colorLight font-semibold text-gradient-to-br from-indigo-300 to-violet-300'>30+</h2>
         <div className='border-r-2 w-[1px] mx-4 h-[60%]'/>
-        <h3 className='~text-xl/3xl text-gradient-to-br from-indigo-300 to-violet-300 '>Startups <br/>Developed</h3>
+        <h3 className='~text-xl/3xl text-colorLight text-gradient-to-br from-indigo-300 to-violet-300 '>Startups <br/>Developed</h3>
       </motion.div> 
       </Magnetic>
 
       <Magnetic>
       <motion.div 
         variants={itemVariants}
-        className="border-x-2 flex items-center border-gradient-to-br from-indigo-300 to-violet-300 rounded-full ~py-3/5 px-10"
+        className="border-x-2 flex text-colorLight items-center border-gradient-to-br from-indigo-300 to-violet-300 rounded-full ~py-3/5 px-10"
       >
-        <h2 className='~text-4xl/6xl font-semibold text-gradient-to-br from-indigo-300 to-violet-300'>120+</h2>
-        <div className='border-r-2 w-[1px] mx-4 h-[60%]'/>
-        <h3 className='~text-xl/3xl text-gradient-to-br from-indigo-300 to-violet-300 '>Happy <br/>Customers</h3>
+        <h2 className='~text-4xl/6xl text-colorLight font-semibold text-gradient-to-br from-indigo-300 to-violet-300'>120+</h2>
+        <div className='border-r-2 text-colorLight w-[1px] mx-4 h-[60%]'/>
+        <h3 className='~text-xl/3xl text-colorLight text-gradient-to-br from-indigo-300 to-violet-300 '>Happy <br/>Customers</h3>
       </motion.div> 
       </Magnetic>
     </motion.div>

@@ -23,14 +23,13 @@ export const HeroParallax = ({
   const opacity = useSpring(useTransform(scrollYProgress, [0, 0.2], [0.2, 1]), springConfig);
   const rotateZ = useSpring(useTransform(scrollYProgress, [0, 0.2], [20, 0]), springConfig);
 
-  // changed from [0, 0.2], [-700, 500] to [0, 0.2], [-300, 100] to reduce gp between header and images when scrolling
+  // changed from [0, 0.2], [-700, 500] to [0, 0.2], [-300, 100] to reduce gap between header and images when scrolling
   const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [-300, 100]), springConfig);
   // const translateY = useSpring(useTransform(scrollYProgress, [0, 0.2], [-700, 500]), springConfig);
   return (
     (<div
-      ref={ref}
-      // TODO: h-[300dvh]
-      className="~h-[75rem]/[120rem] bg-foreground mb-48  pt-10 md:pt-0 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      ref={ref} 
+      className="~h-[75rem]/[120rem] bg-colorLight mb-48  pt-10 md:pt-0 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
